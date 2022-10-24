@@ -39,18 +39,22 @@ const Home: NextPage = () => {
       </div>
       <main>
         <div className="h-screen w-screen relative">
-          <div className="absolute top-[4.37%] right-[20.83%]">
-            <img alt="blob1" src="/blobs/blob1.svg" />
+          {/* lg breakpoint blobs */}
+          <div>
+            <div className="absolute top-[4.37%] right-[20.83%]">
+              <img alt="blob1" src="/blobs/blob1.svg" />
+            </div>
+            <div className="absolute bottom-[34.64%] left-[1.02%]">
+              <img alt="blob2" src="/blobs/blob2.svg" />
+            </div>
+            <div className="absolute bottom-[2.2%] left-[14.47%]">
+              <img alt="blob3" src="/blobs/blob3.svg" />
+            </div>
+            <div className="absolute top-[25.07%] right-[3.07%]">
+              <img alt="blob4" src="/blobs/blob4.svg" />
+            </div>
           </div>
-          <div className="absolute bottom-[34.64%] left-[1.02%]">
-            <img alt="blob2" src="/blobs/blob2.svg" />
-          </div>
-          <div className="absolute bottom-[2.2%] left-[14.47%]">
-            <img alt="blob3" src="/blobs/blob3.svg" />
-          </div>
-          <div className="absolute top-[25.07%] right-[3.07%]">
-            <img alt="blob4" src="/blobs/blob4.svg" />
-          </div>
+          {/* mobile rows */}
           <button className="absolute top-3 right-4">
             <Bars3Icon className="w-16 h-16" />
           </button>
