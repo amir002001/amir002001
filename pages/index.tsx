@@ -32,7 +32,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* Background Div */}
-      <div className="h-screen absolute -z-50">
+      <div className="h-screen absolute -z-50 w-screen">
         <Background blobState={blobState} />
       </div>
       <main>
