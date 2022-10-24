@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import { useEffect, } from "react";
 import {  useSpring } from "react-spring";
-import Background from "../components2/Background";
+import Background from "../components/Background";
 
 const Home: NextPage = () => {
   const [{ blobState }, set] = useSpring(() => ({
