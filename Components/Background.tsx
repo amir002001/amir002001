@@ -8,7 +8,7 @@ interface Props {
 const Background = ({ blobState }: Props) => {
   return (
     <div className="h-full">
-        <svg
+      <svg
         width="100%"
         height="100%"
         preserveAspectRatio="none"
@@ -16,7 +16,7 @@ const Background = ({ blobState }: Props) => {
         xmlns="http://www.w3.org/2000/svg"
         className="hidden lg:inline"
       >
-        <g clip-path="url(#clip0_1_9)">
+        <g clipPath="url(#clip0_1_9)">
           <path d="M1920 0H0V1080H1920V0Z" fill="#4285F4" />
           {/* above */}
 
@@ -67,8 +67,8 @@ const Background = ({ blobState }: Props) => {
             ],
           })}
           fill="#F4B400"
-          stroke-linecap="round"
-          stroke-linejoin="miter"
+          strokeLinecap="round"
+          strokeLinejoin="miter"
         ></animated.path>
       </svg>
     </div>
