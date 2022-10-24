@@ -7,5 +7,12 @@
         @apply bg-site-blue;
         font-family: 'Plus Jakarta Sans', sans-serif;
     }
+    img {  
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-drag: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+     }
 }
 
