@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { useEffect, useState } from "react";
-import { animated, useSpring } from "react-spring";
+import { useEffect, } from "react";
+import {  useSpring } from "react-spring";
 import Background from "../Components/Background";
 
 const Home: NextPage = () => {
