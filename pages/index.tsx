@@ -29,7 +29,7 @@ const Home: NextPage = () => {
           name="description"
           content="My name is Amir :) This is my portfolio!"
         />
-        <link rel="icon" href="/favicon.ico" />
+        
       </Head>
       {/* Background Div */}
       <div className="h-screen absolute -z-50">
