@@ -4,7 +4,8 @@
 
 @layer base {
     body {
-        @apply bg-[#4285F4];
+        @apply bg-site-blue;
         font-family: 'Plus Jakarta Sans', sans-serif;
     }
 }
+
