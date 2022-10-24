@@ -24,7 +24,7 @@ const Home: NextPage = () => {
   return (
     <div className="h-screen">
       <Head>
-        <title>Create Next App</title>
+        <title>Amir Afshari</title>
         <meta
           name="description"
           content="My name is Amir :) This is my portfolio!"
@@ -32,10 +32,16 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* Background Div */}
-      <div className="h-screen">
+      <div className="h-screen absolute -z-50">
         <Background blobState={blobState} />
       </div>
-      <main></main>
+      <main>
+        <p
+          className="absolute text-1xl sm:text-3xl font-semibold bottom-9 left-2/4 -translate-x-1/2 lg:bottom-1/2"
+        >
+          &lt;Coming Soon /&gt;
+        </p>
+      </main>
     </div>
   );
 };

@@ -7,8 +7,8 @@ interface Props {
 
 const Background = ({ blobState }: Props) => {
   return (
-    <>
-      <svg
+    <div className="h-full">
+        <svg
         width="100%"
         height="100%"
         preserveAspectRatio="none"
@@ -71,7 +71,7 @@ const Background = ({ blobState }: Props) => {
           stroke-linejoin="miter"
         ></animated.path>
       </svg>
-    </>
+    </div>
   );
 };
 
