@@ -4,7 +4,7 @@
 
 @layer base {
     body {
-        @apply bg-site-blue;
+        @apply bg-site-blue overflow-hidden;
         font-family: 'Plus Jakarta Sans', sans-serif;
     }
     img {  
@@ -14,5 +14,11 @@
         -webkit-user-select: none;
         -ms-user-select: none;
      }
+}
+
+@layer components {
+    .blob {
+        @apply absolute hover:scale-110 transition hover:-hue-rotate-180
+    }
 }
 

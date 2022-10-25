@@ -1,32 +1,37 @@
 /* eslint-disable @next/next/no-img-element */
 import type { NextPage } from "next";
 import Head from "next/head";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useSpring } from "react-spring";
-import Background from "../components/Background";
 import { Bars3Icon } from "@heroicons/react/24/solid";
-import styles from "./Home.module.css";
 import Nav from "../components/Nav";
 
 const Home: NextPage = () => {
-  const [{ blobState }, set] = useSpring(() => ({
-    blobState: 0,
+  const [navVisible, setNavVisible] = useState(true);
+
+  const [{ blobState }, blobStateApi] = useSpring(() => ({
+    loop: true,
+    config: {
+      duration: 2400,
+    },
+    to: [{ blobState: 1 }, { blobState: 0 }],
+    from: {
+      blobState: 0,
+    },
+  }));
+  const [navSpring, navSpringApi] = useSpring(() => ({
+    from: {
+      opacity: 0
+    },
+    opacity: navVisible ? 1 : 0,
   }));
 
-  useEffect(() => {
-    let blobIndex = 0;
-    const id = window.setInterval(() => {
-      blobIndex = (blobIndex + 1) % 2;
-      set({ blobState: blobIndex });
-    }, 1500);
-
-    return () => {
-      window.clearInterval(id);
-    };
-  }, [set]);
+  const handleHamburgerClick = () => {
+    setNavVisible(!navVisible);
+  };
 
   return (
-    <div className="h-screen w-screen overflow-hidden">
+    <div>
       <Head>
         <title>Amir Afshari</title>
         <meta
@@ -37,10 +42,16 @@ const Home: NextPage = () => {
       {/* Background Div */}
 
       <main>
-        <Nav blobState={blobState} />
-        <p className="absolute text-2xl xl:text-3xl font-semibold bottom-9 left-2/4 -translate-x-1/2 lg:bottom-1/2">
+        <Nav blobState={blobState} navSpring={navSpring} />
+        <p className="absolute text-lg lg:text-2xl xl:text-3xl font-semibold bottom-9 left-2/4 -translate-x-1/2 lg:bottom-1/2">
           &lt;Coming Soon /&gt;
         </p>
+        <button
+          className="absolute top-3 right-4"
+          onClick={handleHamburgerClick}
+        >
+          <Bars3Icon className="w-10 h-10 md:w-16 md:h-16" />
+        </button>
       </main>
     </div>
   );
