@@ -1,46 +1,57 @@
+/* eslint-disable @next/next/no-img-element */
 import type { NextPage } from "next";
 import Head from "next/head";
-import { useEffect, } from "react";
-import {  useSpring } from "react-spring";
-import Background from "../components/Background";
+import { useEffect, useState } from "react";
+import { useSpring } from "react-spring";
+import { Bars3Icon } from "@heroicons/react/24/solid";
+import Nav from "../components/Nav";
 
 const Home: NextPage = () => {
-  const [{ blobState }, set] = useSpring(() => ({
-    blobState: 0,
+  const [navVisible, setNavVisible] = useState(true);
+
+  const [{ blobState }, blobStateApi] = useSpring(() => ({
+    loop: true,
+    config: {
+      duration: 2400,
+    },
+    to: [{ blobState: 1 }, { blobState: 0 }],
+    from: {
+      blobState: 0,
+    },
   }));
-
-  useEffect(() => {
-    let blobIndex = 0;
-    const id = window.setInterval(() => {
-      blobIndex = (blobIndex + 1) % 2;
-      set({ blobState: blobIndex });
-    }, 2000);
-
-    return () => {
-      window.clearInterval(id);
-    };
-  }, [set]);
+  const navSpring = useSpring({
+    from: {
+      opacity: 0
+    },
+    opacity: navVisible ? 1 : 0,
+  });
+  
+  const handleHamburgerClick = () => {
+    setNavVisible(!navVisible);
+  };
 
   return (
-    <div className="h-screen">
+    <div>
       <Head>
         <title>Amir Afshari</title>
         <meta
           name="description"
           content="My name is Amir :) This is my portfolio!"
         />
-        
       </Head>
       {/* Background Div */}
-      <div className="h-screen absolute -z-50">
-        <Background blobState={blobState} />
-      </div>
+
       <main>
-        <p
-          className="absolute text-1xl sm:text-3xl font-semibold bottom-9 left-2/4 -translate-x-1/2 lg:bottom-1/2"
-        >
+        <Nav blobState={blobState} navSpring={navSpring} />
+        <p className="absolute text-lg lg:text-2xl xl:text-3xl font-semibold bottom-9 left-2/4 -translate-x-1/2 lg:bottom-1/2">
           &lt;Coming Soon /&gt;
         </p>
+        <button
+          className="absolute top-3 right-4 outline-none"
+          onClick={handleHamburgerClick}
+        >
+          <Bars3Icon className="w-10 h-10 md:w-16 md:h-16" />
+        </button>
       </main>
     </div>
   );
