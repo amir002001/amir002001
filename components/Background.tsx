@@ -42,7 +42,7 @@ const Background = ({ blobState }: Props) => {
           </g>
         </svg>
       </div>
-      <div className="lg:hidden">
+      <div className="lg:hidden h-2/3">
         <svg
           width="100%"
           height="100%"

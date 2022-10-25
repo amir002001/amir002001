@@ -7,7 +7,7 @@
         @apply bg-site-blue overflow-hidden;
         font-family: 'Plus Jakarta Sans', sans-serif;
     }
-    img {  
+    .unselectable {  
         user-select: none;
         -moz-user-select: none;
         -webkit-user-drag: none;
@@ -19,6 +19,9 @@
 @layer components {
     .blob {
         @apply absolute hover:scale-110 transition hover:-hue-rotate-180
+    }
+    .mobile-nav-item {
+        @apply sm:text-2xl
     }
 }
 

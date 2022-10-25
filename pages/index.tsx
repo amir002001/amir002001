@@ -19,13 +19,13 @@ const Home: NextPage = () => {
       blobState: 0,
     },
   }));
-  const [navSpring, navSpringApi] = useSpring(() => ({
+  const navSpring = useSpring({
     from: {
       opacity: 0
     },
     opacity: navVisible ? 1 : 0,
-  }));
-
+  });
+  
   const handleHamburgerClick = () => {
     setNavVisible(!navVisible);
   };
@@ -47,7 +47,7 @@ const Home: NextPage = () => {
           &lt;Coming Soon /&gt;
         </p>
         <button
-          className="absolute top-3 right-4"
+          className="absolute top-3 right-4 outline-none"
           onClick={handleHamburgerClick}
         >
           <Bars3Icon className="w-10 h-10 md:w-16 md:h-16" />
