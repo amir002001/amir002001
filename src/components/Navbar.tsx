@@ -10,7 +10,7 @@ const Navbar = () => {
           <span className="whitespace-nowrap text-base font-semibold">Amir</span>
         </a>
         <button >
-          <VscMenu className="-translate-y-2" size={25}/>
+          <VscMenu className="sm:-translate-y-2 md:hidden" size={25}/>
         </button>
         <div className="hidden w-full md:block md:w-auto">
           <ul className="mt-4 flex flex-col rounded-lg border border-gray-100 bg-gray-50 p-4 dark:border-gray-700 dark:bg-gray-800 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:text-sm md:font-medium ">

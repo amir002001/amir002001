@@ -21,7 +21,8 @@ const Home: NextPage = () => {
         {/* navbar */}
         <Navbar></Navbar>
         {/* hero */}
-        <section id="hero" className="p-4 w-screen">
+        <section id="hero" className="p-4 w-screen h-screen flex flex-col justify-between">
+          {/* holds title and subtitle */}
           <div>
             <h1 className="text-3xl font-medium">
               I am a <span className="text-primary">software engineer</span> and
@@ -35,16 +36,18 @@ const Home: NextPage = () => {
           {/* hold s currently working and photo */}
           <div className="">
             {/* image */}
-            <div className="relative aspect-auto h-64 w-full">
-              <div className="absolute bottom-20 left-7 w-32">
+            <div className="relative w-full">
+              <div className="absolute bottom-20 left-1/4 w-32">
                 <LinesRightAngle />
               </div>
-              <Image
-                src={"/temp.png"}
-                alt="me"
-                fill
-                className="object-contain"
-              ></Image>
+              <div className="relative h-[calc(100vw/2)] mx-auto max-w-md">
+                <Image
+                  src={"/temp.png"}
+                  alt="me"
+                  fill
+                  className="object-contain object-bottom"
+                ></Image>
+              </div>
               <div className="absolute bottom-7 right-2 w-16">
                 <DotsSquare />
               </div>
@@ -54,7 +57,7 @@ const Home: NextPage = () => {
             <div className="flex items-center gap-2 border border-gray-400 p-2">
               <div className="h-4 w-4 bg-primary" />
               <div>
-                <h6 className="">Currently working on</h6>
+                <h6 className="text-gray-400">Currently working on</h6>
                 <p className="font-medium">lorem</p>
               </div>
             </div>
