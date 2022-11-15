@@ -1,15 +1,12 @@
 import { VscMenu } from "react-icons/vsc";
+import Logo from "./svgs/Logo";
 
 const Navbar = () => {
   return (
     <nav>
       <div className="container mx-auto flex flex-wrap items-center justify-between  pt-3 pb-1 px-3">
         <a href="#" className="flex">
-          <img
-            src="https://flowbite.com/docs/images/logo.svg"
-            className="mr-3 h-6 sm:h-10"
-            alt="Flowbite Logo"
-          />
+          <div className="mr-3 w-6 h-6 sm:h-10"><Logo/></div>
           <span className="whitespace-nowrap text-base font-semibold">Amir</span>
         </a>
         <button >
