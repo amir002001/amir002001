@@ -1,53 +1,68 @@
-import { VscMenu } from "react-icons/vsc";
+import { useState } from "react";
+import { VscMenu, VscClose } from "react-icons/vsc";
+import { ImLinkedin, ImGithub } from "react-icons/im";
 import Logo from "./svgs/Logo";
 
 const Navbar = () => {
+  const [isNavMenuOpen, setIsNavMenuOpen] = useState(false);
+
   return (
     <nav className="w-screen">
-      <div className="flex flex-wrap items-center justify-between  pt-3 pb-1 px-3">
-        <a href="#" className="flex">
-          <div className="mr-3 w-6 h-6 sm:h-10"><Logo/></div>
-          <span className="whitespace-nowrap text-base font-semibold">Amir</span>
+      <div className="flex flex-wrap items-center justify-between px-3 pt-3 pb-1">
+        <a href="#" className="z-20 flex">
+          <div className="mr-3 h-6 w-6 sm:h-10">
+            <Logo />
+          </div>
+          <span className="whitespace-nowrap text-base font-semibold">
+            Amir
+          </span>
         </a>
-        <button >
-          <VscMenu className="sm:-translate-y-2 md:hidden" size={25}/>
+        <button
+          className="z-20 sm:-translate-y-2 md:hidden"
+          onClick={() => setIsNavMenuOpen(!isNavMenuOpen)}
+        >
+          {isNavMenuOpen ? <VscClose size={25} /> : <VscMenu size={25} />}
         </button>
-        <div className="hidden w-full md:block md:w-auto">
-          <ul className="mt-4 flex flex-col rounded-lg border border-gray-100 bg-gray-50 p-4 dark:border-gray-700 dark:bg-gray-800 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:text-sm md:font-medium ">
+        <div
+          className={`absolute top-0 left-0 z-10 h-screen w-screen bg-bggray ${
+            isNavMenuOpen || "-translate-x-full"
+          }
+           md:hidden`}
+        >
+          <ul
+            className="flex flex-col gap-7 pl-6 pt-16 text-3xl text-gray-400
+          md:flex-row"
+          >
             <li>
-              <a
-                href="#"
-                className="block rounded bg-blue-700 py-2 pl-3 pr-4 text-white dark:bg-blue-600 md:bg-transparent md:p-0 md:text-blue-700 md:dark:bg-transparent md:dark:text-white"
-                aria-current="page"
-              >
-                Home
+              <a href="#" className="" aria-current="page">
+                <span className="text-primary">#</span>home
               </a>
             </li>
             <li>
-              <a
-                href="#"
-                className="block rounded py-2 pl-3 pr-4 text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-white"
-              >
-                Services
+              <a href="#" className="">
+                <span className="text-primary">#</span>projects
               </a>
             </li>
             <li>
-              <a
-                href="#"
-                className="block rounded py-2 pl-3 pr-4 text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-white"
-              >
-                Pricing
+              <a href="#" className="">
+                <span className="text-primary">#</span>jobs
               </a>
             </li>
             <li>
-              <a
-                href="#"
-                className="block rounded py-2 pl-3 pr-4 text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-white"
-              >
-                Contact
+              <a href="#" className="">
+                <span className="text-primary">#</span>contact
               </a>
             </li>
           </ul>
+          {/* socials */}
+          <div className="absolute bottom-10 flex w-full justify-center gap-4 text-gray-400 md:hidden">
+            <button>
+              <ImGithub size={40} />
+            </button>
+            <button>
+              <ImLinkedin size={40} />
+            </button>
+          </div>
         </div>
       </div>
     </nav>
