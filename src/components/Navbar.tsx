@@ -3,14 +3,14 @@ import Logo from "./svgs/Logo";
 
 const Navbar = () => {
   return (
-    <nav>
-      <div className="container mx-auto flex flex-wrap items-center justify-between  pt-3 pb-1 px-3">
+    <nav className="w-screen">
+      <div className="flex flex-wrap items-center justify-between  pt-3 pb-1 px-3">
         <a href="#" className="flex">
           <div className="mr-3 w-6 h-6 sm:h-10"><Logo/></div>
           <span className="whitespace-nowrap text-base font-semibold">Amir</span>
         </a>
         <button >
-          <VscMenu size={25}/>
+          <VscMenu className="-translate-y-2" size={25}/>
         </button>
         <div className="hidden w-full md:block md:w-auto">
           <ul className="mt-4 flex flex-col rounded-lg border border-gray-100 bg-gray-50 p-4 dark:border-gray-700 dark:bg-gray-800 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:text-sm md:font-medium ">

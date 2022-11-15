@@ -17,11 +17,11 @@ const Home: NextPage = () => {
         
       </Head>
 
-      <main className="container h-screen w-screen">
+      <main className="container h-screen w-screen flex flex-col item">
         {/* navbar */}
         <Navbar></Navbar>
         {/* hero */}
-        <section id="hero" className="m-4">
+        <section id="hero" className="p-4 w-screen">
           <div>
             <h1 className="text-3xl font-medium">
               I am a <span className="text-primary">software engineer</span> and
