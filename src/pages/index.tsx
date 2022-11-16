@@ -112,6 +112,20 @@ const Home: NextPage = () => {
           </div>
         </section>
         {/* positions */}
+        <section className="mt-24 max-md:hidden">
+        <div className="flex justify-between">
+            <div className="flex grow items-center gap-2">
+              <h1 className=" text-3xl">
+                <span className="text-primary">#</span>positions
+              </h1>
+              <div className="h-0.5 w-2/3 bg-primary"></div>
+            </div>
+            <div className="flex items-center gap-1">
+              <p>View all</p>
+              <TbArrowRightTail />
+            </div>
+          </div>
+        </section>
       </main>
     </>
   );
