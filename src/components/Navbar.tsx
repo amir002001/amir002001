@@ -11,7 +11,7 @@ const Navbar = () => {
   });
   return (
     <nav className="w-full">
-      <div className={`flex w-full items-center justify-between px-3 pt-3 pb-1`}>
+      <div className={`flex w-full items-center justify-between pb-1`}>
         <a href="#" className="z-20 flex items-center ">
           <div className="mr-3 h-5 w-5 flex sm:h-10">
             <Logo />
