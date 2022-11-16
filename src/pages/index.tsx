@@ -17,18 +17,18 @@ const Home: NextPage = () => {
         
       </Head>
 
-      <main className="container h-screen w-screen flex flex-col item">
+      <main className="container mx-auto">
         {/* navbar */}
         <Navbar></Navbar>
         {/* hero */}
         <section id="hero" className="p-4 w-screen h-screen flex flex-col justify-between">
           {/* holds title and subtitle */}
           <div>
-            <h1 className="text-3xl font-medium">
+            <h1 className="text-3xl font-medium max-w-md">
               I am a <span className="text-primary">software engineer</span> and
               I <span className="text-primary">solve problems</span>
             </h1>
-            <h4 className="mt-6 text-gray-400">
+            <h4 className="mt-6 text-gray-400 max-w-md">
               I love new tech. Talk to me about serverless, lambda, and anything
               JavaScript
             </h4>

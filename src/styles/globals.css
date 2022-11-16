@@ -7,22 +7,22 @@
   body {
     @apply overflow-x-hidden bg-bggray text-white;
     font-family: "Fira Code", monospace;
+    overflow: auto
   }
 
   * {
-    @apply m-0 box-border;
+    @apply m-0 box-border overflow-y-hidden;
   }
 
   body::-webkit-scrollbar {
-    width: 12px; /* width of the entire scrollbar */
+    width: 6px;
   }
 
   body::-webkit-scrollbar-track {
-   @apply bg-gray-600 /* color of the tracking area */
+   @apply bg-gray-600 
   }
 
   body::-webkit-scrollbar-thumb {
-    @apply bg-gray-300 border-gray-400 border-2; /* color of the scroll thumb */
-    border-radius: 20px; /* roundness of the scroll thumb */
+    @apply  bg-gray-300 border-gray-400 border-2 rounded-3xl ; 
   }
 }
