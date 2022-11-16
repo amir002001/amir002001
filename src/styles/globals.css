@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    @apply overflow-x-hidden bg-bggray text-white;
+    font-family: "Fira Code", monospace;
+    overflow: auto
+  }
+
+  * {
+    @apply m-0 box-border overflow-y-hidden;
+  }
+
+  body::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  body::-webkit-scrollbar-track {
+   @apply bg-gray-600 
+  }
+
+  body::-webkit-scrollbar-thumb {
+    @apply  bg-gray-300 border-gray-400 border-2 rounded-3xl ; 
+  }
+}
