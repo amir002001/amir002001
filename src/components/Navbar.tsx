@@ -3,6 +3,7 @@ import { VscMenu, VscClose } from "react-icons/vsc";
 import { ImLinkedin, ImGithub } from "react-icons/im";
 import Logo from "./svgs/Logo";
 import { useSpring, animated } from "@react-spring/web";
+import { HiOutlineNewspaper } from "react-icons/hi";
 
 const Navbar = () => {
   const [isNavMenuOpen, setIsNavMenuOpen] = useState(false);
@@ -13,7 +14,7 @@ const Navbar = () => {
     <nav className="w-full">
       <div className={`flex w-full items-center justify-between pb-1`}>
         <a href="#" className="z-20 flex items-center ">
-          <div className="mr-3 h-5 w-5 flex sm:h-10">
+          <div className="mr-3 flex h-5 w-5 sm:h-10">
             <Logo />
           </div>
           <span className="whitespace-nowrap text-base font-semibold">
@@ -27,12 +28,12 @@ const Navbar = () => {
           {isNavMenuOpen ? <VscClose size={25} /> : <VscMenu size={25} />}
         </button>
         <animated.div
-          className="max-md:fixed max-md:h-screen max-md:w-screen max-md:top-0 bg-bggray md:!translate-x-0 z-10"
+          className="z-10 bg-bggray max-md:fixed max-md:top-0 max-md:h-screen max-md:w-screen md:!translate-x-0"
           style={translate}
         >
           <ul
-            className="flex flex-col gap-7 pl-6 pt-16 text-3xl text-gray-400
-          md:flex-row md:text-lg md:pt-0"
+            className="flex flex-col  gap-7 pl-6 pt-16 text-3xl
+          text-gray-400 md:flex-row md:pt-0 md:text-lg md:items-center"
           >
             <li>
               <a href="#" className="" aria-current="page">
@@ -46,13 +47,14 @@ const Navbar = () => {
             </li>
             <li>
               <a href="#" className="">
-                <span className="text-primary">#</span>jobs
+                <span className="text-primary">#</span>positions
               </a>
             </li>
             <li>
-              <a href="#" className="">
-                <span className="text-primary">#</span>contact
-              </a>
+              <button className="border flex items-center gap-2 border-primary p-2">
+                Blog
+                <HiOutlineNewspaper />
+              </button>
             </li>
           </ul>
           {/* socials */}
