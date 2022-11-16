@@ -104,7 +104,7 @@ const Home: NextPage = () => {
               <TbArrowRightTail />
             </div>
           </div>
-          <div className="flex gap-3">
+          <div className="flex gap-3 mt-12">
             <ProjectCard />
             <ProjectCard />
             <ProjectCard />
