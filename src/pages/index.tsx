@@ -5,7 +5,8 @@ import Navbar from "../components/Navbar";
 import DotsSquare from "../components/svgs/DotsSquare";
 import { VscQuote } from "react-icons/vsc";
 import LinesRightAngle from "../components/svgs/LinesRightAngle";
-
+import { TbArrowRightTail } from "react-icons/tb";
+import ProjectCard from "../components/ProjectCard";
 // import { trpc } from "../utils/trpc";
 
 const Home: NextPage = () => {
@@ -15,6 +16,7 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>Home - Amir</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"></link>
       </Head>
 
       <main className="container mx-auto p-4">
@@ -79,7 +81,7 @@ const Home: NextPage = () => {
               <div className="border border-t-0 border-gray-400 p-4">
                 <h4>Albert Einstein</h4>
               </div>
-              <div className="absolute left-5 -translate-y-1/2 bg-bggray text-gray-400 p-1">
+              <div className="absolute left-5 -translate-y-1/2 bg-bggray p-1 text-gray-400">
                 <VscQuote />
               </div>
               <div className="absolute bottom-[42px] right-6 -translate-y-1/2 bg-bggray p-1 text-gray-400">
@@ -88,7 +90,28 @@ const Home: NextPage = () => {
             </div>
           </div>
         </section>
-        {/*  */}
+        {/* projects */}
+        <section className="mt-24 max-md:hidden">
+          <div className="flex justify-between">
+            <div className="flex grow items-center gap-2">
+              <h1 className=" text-3xl">
+                <span className="text-primary">#</span>projects
+              </h1>
+              <div className="h-0.5 w-2/3 bg-primary"></div>
+            </div>
+            <div className="flex items-center gap-1">
+              <p>View all</p>
+              <TbArrowRightTail />
+            </div>
+          </div>
+          <div className="flex gap-3">
+            <ProjectCard />
+            <ProjectCard />
+            <ProjectCard />
+            <ProjectCard />
+          </div>
+        </section>
+        {/* positions */}
       </main>
     </>
   );
