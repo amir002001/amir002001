@@ -76,7 +76,7 @@ const Home: NextPage = () => {
             </div>
           </div>
           {/* holds quote and cite and icons */}
-          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 max-md:hidden">
+          <div className="absolute bottom-20 left-1/2 -translate-x-1/2 max-md:hidden">
             <div className="relative flex h-full w-full flex-col items-end p-2">
               {/* quote */}
               <div className="border border-gray-400 p-8">
