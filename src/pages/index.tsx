@@ -8,6 +8,7 @@ import LinesRightAngle from "../components/svgs/LinesRightAngle";
 import { TbArrowRightTail } from "react-icons/tb";
 import ProjectCard from "../components/ProjectCard";
 import ContactMe from "../components/ContactMe";
+import Footer from "../components/Footer";
 // import { trpc } from "../utils/trpc";
 
 const Home: NextPage = () => {
@@ -145,9 +146,9 @@ const Home: NextPage = () => {
           </div>
         </section>
       </main>
-      <div className="h-0.5 bg-gray-400 mt-12 max-md:hidden"></div>
+      <div className="mt-12 h-0.5 bg-gray-400 max-md:hidden"></div>
       <footer className="container mx-auto p-4 max-md:hidden">
-        
+        <Footer />
       </footer>
     </>
   );
