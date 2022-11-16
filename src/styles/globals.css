@@ -26,3 +26,9 @@
     @apply  bg-gray-300 border-gray-400 border-2 rounded-3xl ; 
   }
 }
+
+@layer components {
+  .inputField {
+    @apply bg-bggray placeholder:text-gray-400 border border-gray-400 p-2;
+  }
+}

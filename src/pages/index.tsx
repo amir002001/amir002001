@@ -7,6 +7,7 @@ import { VscQuote } from "react-icons/vsc";
 import LinesRightAngle from "../components/svgs/LinesRightAngle";
 import { TbArrowRightTail } from "react-icons/tb";
 import ProjectCard from "../components/ProjectCard";
+import ContactMe from "../components/ContactMe";
 // import { trpc } from "../utils/trpc";
 
 const Home: NextPage = () => {
@@ -16,12 +17,17 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>Home - Amir</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"></link>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+        ></link>
       </Head>
-
+      <header className="container mx-auto p-4">
+        <Navbar></Navbar>
+      </header>
       <main className="container mx-auto p-4">
         {/* navbar */}
-        <Navbar></Navbar>
+
         {/* hero */}
         <section
           id="hero"
@@ -104,7 +110,7 @@ const Home: NextPage = () => {
               <TbArrowRightTail />
             </div>
           </div>
-          <div className="flex gap-3 mt-12">
+          <div className="mt-12 flex gap-3">
             <ProjectCard />
             <ProjectCard />
             <ProjectCard />
@@ -113,7 +119,7 @@ const Home: NextPage = () => {
         </section>
         {/* positions */}
         <section className="mt-24 max-md:hidden">
-        <div className="flex justify-between">
+          <div className="flex justify-between">
             <div className="flex grow items-center gap-2">
               <h1 className=" text-3xl">
                 <span className="text-primary">#</span>positions
@@ -126,7 +132,23 @@ const Home: NextPage = () => {
             </div>
           </div>
         </section>
+        {/* contact form */}
+        <section className="mt-24 flex items-start max-md:hidden">
+          <div className="flex grow items-center gap-2">
+            <h1 className=" text-3xl">
+              <span className="text-primary">#</span>contact me
+            </h1>
+            <div className="h-0.5 w-1/3 bg-primary"></div>
+          </div>
+          <div className="mt-10">
+            <ContactMe />
+          </div>
+        </section>
       </main>
+      <div className="h-0.5 bg-gray-400 mt-12 max-md:hidden"></div>
+      <footer className="container mx-auto p-4 max-md:hidden">
+        
+      </footer>
     </>
   );
 };
