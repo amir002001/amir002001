@@ -11,7 +11,7 @@
   }
 
   * {
-    @apply m-0 box-border overflow-y-hidden;
+    @apply m-0 box-border overflow-hidden;
   }
 
   body::-webkit-scrollbar {
