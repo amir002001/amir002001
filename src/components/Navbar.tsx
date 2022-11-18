@@ -4,6 +4,7 @@ import { ImLinkedin, ImGithub } from "react-icons/im";
 import Logo from "./svgs/Logo";
 import { useSpring, animated } from "@react-spring/web";
 import { HiOutlineNewspaper } from "react-icons/hi";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isNavMenuOpen, setIsNavMenuOpen] = useState(false);
@@ -36,25 +37,25 @@ const Navbar = () => {
           text-gray-400 md:flex-row md:items-center md:pt-0 md:text-lg"
           >
             <li>
-              <a href="#" className="" aria-current="page">
+              <Link href="/" className="" aria-current="page">
                 <span className="text-primary">#</span>home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="">
+              <Link href="/projects" className="">
                 <span className="text-primary">#</span>projects
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="">
+              <Link href="/positions" className="">
                 <span className="text-primary">#</span>positions
-              </a>
+              </Link>
             </li>
             <li>
-              <button className="flex items-center gap-2 border border-primary p-2">
+              <Link href="/blog" className="flex items-center gap-2 border border-primary p-2">
                 Blog
                 <HiOutlineNewspaper />
-              </button>
+              </Link>
             </li>
           </ul>
           {/* socials */}
