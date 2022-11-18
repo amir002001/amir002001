@@ -52,7 +52,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href="/blog" className="flex items-center gap-2 border border-primary p-2">
+              <Link href="/blog" className="flex items-center gap-2 border border-primary p-2 w-fit">
                 Blog
                 <HiOutlineNewspaper />
               </Link>
