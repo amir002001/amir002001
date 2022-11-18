@@ -8,7 +8,7 @@ import { HiOutlineNewspaper } from "react-icons/hi";
 const Navbar = () => {
   const [isNavMenuOpen, setIsNavMenuOpen] = useState(false);
   const translate = useSpring({
-    transform: isNavMenuOpen ? "translateX(0)" : "translateX(-100%)",
+    transform: isNavMenuOpen ? "translateX(0%)" : "translateX(-100%)",
   });
   return (
     <nav className="w-full">
@@ -33,7 +33,7 @@ const Navbar = () => {
         >
           <ul
             className="flex flex-col  gap-7 pl-6 pt-16 text-3xl
-          text-gray-400 md:flex-row md:pt-0 md:text-lg md:items-center"
+          text-gray-400 md:flex-row md:items-center md:pt-0 md:text-lg"
           >
             <li>
               <a href="#" className="" aria-current="page">
@@ -51,7 +51,7 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <button className="border flex items-center gap-2 border-primary p-2">
+              <button className="flex items-center gap-2 border border-primary p-2">
                 Blog
                 <HiOutlineNewspaper />
               </button>
