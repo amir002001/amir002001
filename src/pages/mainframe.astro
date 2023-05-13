@@ -3,5 +3,50 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="amir ¬‿¬">
-    <main>mainframe</main>
+    <section class="w-screen h-screen pb-16 px-16">
+        <div
+            class="terminal w-full h-full bg-gray-950 border border-white border-dotted p-4"
+        >
+        </div>
+    </section>
 </Layout>
+
+<script>
+    import "xterm/css/xterm.css";
+    import { WebContainer } from "@webcontainer/api";
+    import { Terminal } from "xterm";
+
+    const webcontainerInstance = await WebContainer.boot();
+
+    async function startShell(terminal: Terminal) {
+        const shellProcess = await webcontainerInstance.spawn("jsh");
+
+        shellProcess.output.pipeTo(
+            new WritableStream({
+                write(data) {
+                    terminal.write(data);
+                },
+            })
+        );
+
+        const input = shellProcess.input.getWriter();
+        terminal.onData((data) => {
+            input.write(data);
+        });
+        return shellProcess;
+    }
+
+    const terminalEl = document.querySelector(
+        ".terminal"
+    ) as HTMLElement | null;
+    if (terminalEl == null) {
+        throw Error("couldn't find terminal element");
+    }
+
+    const terminal = new Terminal({
+        convertEol: true,
+    });
+    terminal.open(terminalEl);
+
+    startShell(terminal);
+</script>
