@@ -1,0 +1,36 @@
+---
+export interface Props {
+    title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<a href="#" class="flex gap-2 items-end link">
+    <span>[ ]</span><span>{title}</span>
+</a>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const links = document.querySelectorAll(".link");
+        const handleAnchorHover = (e: Event) => {
+            if (e.target == null) {
+                return;
+            }
+            const span = (e.target as Element).querySelector("span");
+            if (span == null) {
+                return;
+            }
+            if (span.innerText == "[ ]") {
+                span.innerText = "[X]";
+            } else {
+                span.innerText = "[ ]";
+            }
+        };
+
+        for (const link of links) {
+            link.addEventListener("mouseenter", handleAnchorHover);
+            link.addEventListener("mouseleave", handleAnchorHover);
+        }
+    });
+</script>
