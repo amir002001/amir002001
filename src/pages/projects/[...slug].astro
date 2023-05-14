@@ -1,6 +1,7 @@
 ---
-import { getCollection } from "astro:content";
+import { CollectionEntry, getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
+import ProjectButtons from "../../components/ProjectButtons.astro";
 
 export async function getStaticPaths() {
     const projectEntries = await getCollection("projects");
@@ -10,45 +11,57 @@ export async function getStaticPaths() {
     }));
 }
 
-const { entry } = Astro.props;
+const { entry } = Astro.props as { entry: CollectionEntry<"projects"> };
 const { Content } = await entry.render();
 const title = "amir ¬‿¬ - " + entry.data.title;
 ---
 
 <Layout title={title}>
-    <section>
-        <img src={entry.data.image} alt={`${entry.data.title} project image`} />
+    <section class="max-w-[65ch] mt-12">
         <h1 class="text-3xl font-bold">{entry.data.title}</h1>
+        <span class="block w-full border-t border-dotted mt-2"></span>
         {
-            entry.data.link != null && entry.data.link != undefined ? (
-                <>
-                    <a
-                        class="flex gap-1 text-sm items-center"
-                        target="_blank"
-                        href={entry.data.link}
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke-width="1.5"
-                            stroke="currentColor"
-                            class="w-6 h-6"
-                        >
-                            <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"
-                            />
-                        </svg>
-                        {entry.data.link}
-                    </a>
-                </>
-            ) : (
-                ""
-            )
+            entry.data.awards != null &&
+            entry.data.awards != undefined &&
+            entry.data.awards.length != 0 ? (
+                <div class="mt-2">
+                    Awarded:{" "}
+                    {entry.data.awards.map((award, index) => {
+                        const builder = [];
+                        builder.push(award);
+                        if (index != entry.data.awards!.length - 1) {
+                            builder.push(", ");
+                        }
+                        return builder.join("");
+                    })}
+                </div>
+            ) : null
         }
-        <div class="prose prose-invert">
+        {
+            entry.data.tags.length != 0 ? (
+                <div class="mt-2">
+                    Technologies:{" "}
+                    {entry.data.tags.map((tag, index) => {
+                        const builder = [];
+                        builder.push(tag);
+                        if (index != entry.data.tags.length - 1) {
+                            builder.push(", ");
+                        }
+                        return builder.join("");
+                    })}
+                </div>
+            ) : null
+        }
+        <img
+            class="w-fit mt-4"
+            crossorigin="anonymous"
+            src={entry.data.image}
+            alt={`${entry.data.title} project image`}
+        />
+        <div class="w-full flex mt-4 justify-center">
+            <ProjectButtons className="" entry={entry} />
+        </div>
+        <div class="mt-4 prose prose-invert">
             <Content />
         </div>
     </section>
