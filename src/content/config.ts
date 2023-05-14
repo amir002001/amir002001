@@ -3,11 +3,13 @@ import { z, defineCollection } from "astro:content";
 const projectsCollection = defineCollection({
     schema: z.object({
         title: z.string(),
-        tags: z.array(z.string()),
+        shortDescription: z.string(),
+        tech: z.array(z.string()),
         awards: z.array(z.string()).optional(),
         github: z.string(),
         image: z.string(),
         link: z.string().optional(),
+        devpost: z.string().optional(),
     }),
 });
 // 3. Export a single `collections` object to register your collection(s)

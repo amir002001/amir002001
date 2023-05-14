@@ -1,26 +1,18 @@
 ---
-title: DocuChat 
-tags: 
-    - Next.js
-    - LLMs
-    - Vector Database
-    - Scraping
+title: ASL Rocket to Space
+tech: 
+    - CSS
+    - Django
+    - HTML
+    - Javascript
+    - Jquery
+shortDescription: The day to day life of an individual with a disability such as deafness is extremely challenging. Many educational and job opportunities are not available because of the communication gap. Very few individuals that are not deaf know American Sign Language (ASL) so this severely impacts deaf individuals and those that are hard of hearing. As a result, many of them resort to using a pen and paper or a smartphone to type what they are thinking and show it to the other person. We believe that this is very unfair that they have to do this and we believe that ASL to be more common in our community, and worldwide.
 awards:
-    -  Cohere Best Community Project Award
-github: "https://github.com/amir002001/DocuChat"
-image: ""
-link: "https://docuchat.amir.day/"
+    -  First Place 🥇 at Hackville 2021
+github: "https://github.com/gracinev/aslrockettospace/tree/master"
+image: "TODO"
+devpost: "https://devpost.com/software/asl-rocket"
 ---
-# ASL Rocket to Space
-
-Awards: First Place 🥇
-Created: February 6, 2021
-DevPost: https://devpost.com/software/asl-rocket
-GitHub: https://github.com/gracinev/aslrockettospace/tree/master
-Technology: CSS, Django, HTML, Javascript, Jquery
-
-## **Inspiration**
-
 The day to day life of an individual with a disability such as deafness is extremely challenging. Many educational and job opportunities are not available because of the communication gap. Very few individuals that are not deaf know American Sign Language (ASL) so this severely impacts deaf individuals and those that are hard of hearing. As a result, many of them resort to using a pen and paper or a smartphone to type what they are thinking and show it to the other person. We believe that this is very unfair that they have to do this and we believe that ASL to be more common in our community, and worldwide.
 
 ## **What it does**

@@ -1,26 +1,20 @@
 ---
-title: DocuChat 
-tags: 
-    - Next.js
-    - LLMs
-    - Vector Database
-    - Scraping
+title: Heart in Sync
+tech: 
+    - CSS
+    - Figma
+    - Lombok
+    - Spring Boot
+    - Thymeleaf Templates
+    - Javascript
+    - Jquery
+shortDescription: A quarter of all Canadian adults are hypertensive, which is a primary determinant for stroke and heart diseases. By adopting a healthy lifestyle, these risks can be eliminated. Our website considers a wide variety of lifestyle components, from nutrition to mental health, and allows users to implement them in their everyday lives with ease.
 awards:
-    -  Cohere Best Community Project Award
-github: "https://github.com/amir002001/DocuChat"
-image: ""
-link: "https://docuchat.amir.day/"
+    -  First Place 🥇 at Hackville 2021
+github: "https://github.com/amir002001/HeartInSync"
+image: "TODO"
+devpost: "https://devpost.com/software/heart-in-sync"
 ---
-# Heart in Sync
-
-Created: March 6, 2021
-DevPost: https://devpost.com/software/heart-in-sync
-GitHub: https://github.com/amir002001/HeartInSync
-Technology: CSS, Figma, Javascript, Jquery, Lombok, Spring Boot, Thymeleaf Templates
-
-[Heart in Sync](https://devpost.com/software/heart-in-sync)
-
-### **Inspiration:**
 
 A quarter of all Canadian adults are hypertensive, which is a primary determinant for stroke and heart diseases. By adopting a healthy lifestyle, these risks can be eliminated. Our website considers a wide variety of lifestyle components, from nutrition to mental health, and allows users to implement them in their everyday lives with ease.
 

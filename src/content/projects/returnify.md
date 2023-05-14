@@ -1,24 +1,16 @@
 ---
-title: DocuChat 
-tags: 
-    - Next.js
-    - LLMs
-    - Vector Database
-    - Scraping
-awards:
-    -  Cohere Best Community Project Award
-github: "https://github.com/amir002001/DocuChat"
+title: Returnify
+shortDescription: The BAM team were sick and tired of the old return experience where you had to walk over to the post office or the store to drop off your return 🥱🥱🥱. We came up with a brand new way to handle returns! Using an uber-model, paired with the current domain, we promise to deliver amazing results 🧢.
+tech: 
+    - Asp.NET
+    - C#
+    - React Native
+    - TypeScript
+    - EF Core
+github: "https://github.com/amir002001/Returnify/"
 image: ""
 link: "https://docuchat.amir.day/"
 ---
-# Returnify
-
-Created: April 14, 2022
-GitHub: https://github.com/amir002001/Returnify/
-Technology: ASP.NET, C#, React Native, TypeScript
-
-## About The Project
-
 The BAM team were sick and tired of the old return experience where you had to walk over to the post office or the store to drop off your return 🥱🥱🥱. We came up with a brand new way to handle returns! Using an uber-model, paired with the current domain, we promise to deliver amazing results 🧢.
 
 ### Built With

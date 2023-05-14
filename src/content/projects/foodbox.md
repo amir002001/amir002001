@@ -1,26 +1,24 @@
 ---
-title: DocuChat 
-tags: 
+title: Foodbox
+tech: 
+    - AWS
+    - Beautifulsoup
+    - FastAPI
+    - Framer Motion
     - Next.js
-    - LLMs
-    - Vector Database
-    - Scraping
+    - Python
+    - React
+    - Supabase
+    - Vercel
+shortDescription: The idea for Foodbox was inspired by the growing problem of food waste in our society. According to the United Nations, one-third of all food produced globally is wasted, which not only has a significant environmental impact but also a social one, as so many people are struggling with food insecurity. We realized that grocery stores often have a surplus of certain products that don't sell well, and we wanted to find a way to help them move this inventory and avoid waste. At the same time, we saw an opportunity for consumers to discover new products at a discounted price.
 awards:
-    -  Cohere Best Community Project Award
-github: "https://github.com/amir002001/DocuChat"
-image: ""
-link: "https://docuchat.amir.day/"
+    -  First Place 🥇 at McHacks2023 (McGill)
+    -  Telus Sustainability Challenge 🌱
+github: "https://github.com/AbeGeta/Foodbox"
+link: "https://foodbox.amir.day/"
+image: "TODO"
+devpost: "https://devpost.com/software/foodbox-qv3rfd"
 ---
-# Foodbox
-
-Awards: Second Place 🥈, Telus Sustainability Challenge 🌱
-Created: January 29, 2023
-DevPost: https://devpost.com/software/foodbox-qv3rfd
-GitHub: https://github.com/AbeGeta/Foodbox
-Link: https://foodbox.amir.day/
-Technology: AWS, Beautiful Soup, FastAPI, Framer Motion, Next.js, PosgreSQL, Python, React, Supabase, Vercel
-
-## **💡 Inspiration 💡**
 
 The idea for Foodbox was inspired by the growing problem of food waste in our society. According to the United Nations, one-third of all food produced globally is wasted, which not only has a significant environmental impact but also a social one, as so many people are struggling with food insecurity. We realized that grocery stores often have a surplus of certain products that don't sell well, and we wanted to find a way to help them move this inventory and avoid waste. At the same time, we saw an opportunity for consumers to discover new products at a discounted price.
 

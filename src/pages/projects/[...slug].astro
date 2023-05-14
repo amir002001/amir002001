@@ -38,13 +38,13 @@ const title = "amir ¬‿¬ - " + entry.data.title;
             ) : null
         }
         {
-            entry.data.tags.length != 0 ? (
+            entry.data.tech.length != 0 ? (
                 <div class="mt-2">
                     Technologies:{" "}
-                    {entry.data.tags.map((tag, index) => {
+                    {entry.data.tech.map((tech, index) => {
                         const builder = [];
-                        builder.push(tag);
-                        if (index != entry.data.tags.length - 1) {
+                        builder.push(tech);
+                        if (index != entry.data.tech.length - 1) {
                             builder.push(", ");
                         }
                         return builder.join("");

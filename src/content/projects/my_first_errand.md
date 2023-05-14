@@ -1,25 +1,16 @@
 ---
-title: DocuChat 
-tags: 
+title: My First Errand
+shortDescription: It can be difficult for parents to teach and effectively communicate the importance of being independent to their children. All children should eventually be able to support themselves and have the necessary skills to be responsible. A hit Japanese TV show, “Old Enough” which was recently added to Netflix displays children of ages 2-5 years going on tasks outside the house, navigating through the different neighborhoods, and doing the errand given to them by their parents completely alone. Research has shown that these errands are of extreme importance in the development of the child’s social and problem-solving skills. As mentioned in an NPR article
+tech: 
     - Next.js
-    - LLMs
-    - Vector Database
-    - Scraping
-awards:
-    -  Cohere Best Community Project Award
-github: "https://github.com/amir002001/DocuChat"
+    - Figma
+    - React
+    - Tailwind
+github: "https://github.com/amir002001/my-first-errand"
 image: ""
 link: "https://docuchat.amir.day/"
+devpost: "https://devpost.com/software/my-first-errand"
 ---
-# My First Errand
-
-Created: November 24, 2022
-DevPost: https://devpost.com/software/my-first-errand
-GitHub: https://github.com/amir002001/my-first-errand
-Technology: Figma, Next.js, React, TailwindCSS
-
-## **Inspiration**
-
 It can be difficult for parents to teach and effectively communicate the importance of being independent to their children. All children should eventually be able to support themselves and have the necessary skills to be responsible. A hit Japanese TV show, “Old Enough” which was recently added to Netflix displays children of ages 2-5 years going on tasks outside the house, navigating through the different neighborhoods, and doing the errand given to them by their parents completely alone. Research has shown that these errands are of extreme importance in the development of the child’s social and problem-solving skills. As mentioned in an NPR article:
 
 > "Autonomous play has been a really important part of child development throughout human evolutionary history," says behavioral scientist Dorsa Amir at the University of California, Berkeley. "And actually, it was a feature of American society until relatively recently as well." This inspired us to create this fun and interactive game for children to have a sort of tutorial for what to expect in the real world and for dealing with common scenarios that they might face.

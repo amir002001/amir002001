@@ -1,25 +1,20 @@
 ---
-title: DocuChat 
-tags: 
-    - Next.js
+title: Hear.Me
+shortDescription: We were inspired to create this project because of our own personal experiences with public transportation. As frequent users, we often missed important announcements or our stop due to unclear audio or distractions. This realization made us imagine how much more challenging this must be for deaf individuals who rely on visual cues to access the same information. This sparked the idea for our project - an application that uses QR codes to provide real-time transcription and categorization of the conductor's words to improve accessibility and inclusivity for deaf individuals on public transportation. We aim to bridge the communication gap and empower marginalized communities through this innovative solution.
+tech: 
     - LLMs
-    - Vector Database
+    - Firebase
+    - Python
+    - React Native
+    - lambda
+    - Vercel
+    - Speech to text
     - Scraping
-awards:
-    -  Cohere Best Community Project Award
-github: "https://github.com/amir002001/DocuChat"
+github: "https://github.com/bruhspicy/hear-me"
 image: ""
 link: "https://docuchat.amir.day/"
+devpost: "https://devpost.com/software/hearme-pt4ila"
 ---
-# Hear.Me
-
-Created: January 22, 2023
-DevPost: https://devpost.com/software/hearme-pt4ila
-GitHub: https://github.com/bruhspicy/hear-me
-Technology: Cohere, Firebase, Firestore, Python, React Native, Serverless, Speech to Text
-
-## **Inspiration**
-
 We were inspired to create this project because of our own personal experiences with public transportation. As frequent users, we often missed important announcements or our stop due to unclear audio or distractions. This realization made us imagine how much more challenging this must be for deaf individuals who rely on visual cues to access the same information. This sparked the idea for our project - an application that uses QR codes to provide real-time transcription and categorization of the conductor's words to improve accessibility and inclusivity for deaf individuals on public transportation. We aim to bridge the communication gap and empower marginalized communities through this innovative solution.
 
 ## **What it does**

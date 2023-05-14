@@ -1,26 +1,18 @@
 ---
-title: DocuChat 
-tags: 
-    - Next.js
-    - LLMs
-    - Vector Database
-    - Scraping
+title: Bruin Gains
+shortDescription: College students like ourselves face many challenges and difficulties while attending. Two common issues we find students face are making friends and taking care of their health. For many students, it can be daunting to meet new people and many become isolated. Also, during the semester, we are often too busy with deadlines and assignments so we neglect to incorporate any physical activity into our daily schedule. This results in being over or underweight which leads to self-esteem and mental health issues. We wanted to create an application that would break our habits and develop beneficial ones instead.
+tech: 
+    - Adobe XD
+    - Firebase
+    - Javascript
+    - React
 awards:
-    -  Cohere Best Community Project Award
-github: "https://github.com/amir002001/DocuChat"
-image: ""
+    -  Best Use of Google Cloud ☁️ at Hackville 2022
+github: "https://github.com/amir002001/bruin-gains-hackville"
+image: "TODO"
 link: "https://docuchat.amir.day/"
+devpost: "https://devpost.com/software/bruingains"
 ---
-# Bruin Gains
-
-Awards: Best Use of Google Cloud ☁️
-Created: January 16, 2022
-DevPost: https://devpost.com/software/bruingains
-GitHub: https://github.com/amir002001/bruin-gains-hackville
-Technology: Adobe XD, Firebase, Firestore, Javascript, React
-
-## Inspiration
-
 College students like ourselves face many challenges and difficulties while attending. Two common issues we find students face are making friends and taking care of their health. For many students, it can be daunting to meet new people and many become isolated. Also, during the semester, we are often too busy with deadlines and assignments so we neglect to incorporate any physical activity into our daily schedule. This results in being over or underweight which leads to self-esteem and mental health issues. We wanted to create an application that would break our habits and develop beneficial ones instead.
 
 ## What it does
