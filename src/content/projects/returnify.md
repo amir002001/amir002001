@@ -1,6 +1,6 @@
 ---
 title: Returnify
-shortDescription: The BAM team were sick and tired of the old return experience where you had to walk over to the post office or the store to drop off your return 🥱🥱🥱. We came up with a brand new way to handle returns! Using an uber-model, paired with the current domain, we promise to deliver amazing results 🧢.
+shortDescription: BAM (Better Automated Returns) is a revolutionary platform that transforms the return process. Using React Native and ASP.NET Core, BAM offers a seamless mobile app experience. Led by Amir Afshari, the team aims to disrupt the industry by providing convenient and efficient returns for consumers.
 tech: 
     - Asp.NET
     - C#
@@ -39,7 +39,3 @@ Developing a revolutionary solution like BAM comes with its fair share of challe
 
 Looking ahead, BAM has the potential to disrupt the return experience landscape. By continuously enhancing their solution, expanding to new markets, and forging partnerships with e-commerce platforms and retailers, BAM can establish itself as the go-to platform for hassle-free returns.
 
-Conclusion
-----------
-
-Thanks to the innovative efforts of the BAM team, the traditional return experience is being reshaped. With their cutting-edge mobile application, powered by React Native and ASP.NET Core, BAM promises a seamless and convenient return process. Led by the skilled contributions of Amir Afshari, the team's dedication to delivering exceptional results has the potential to revolutionize the industry. As consumers continue to seek convenience in their shopping experiences, BAM stands poised to become the preferred solution for hassle-free returns.

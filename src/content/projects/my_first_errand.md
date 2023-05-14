@@ -7,7 +7,7 @@ tech:
     - React
     - Tailwind
 github: "https://github.com/amir002001/my-first-errand"
-image: ""
+image: "https://res.cloudinary.com/df3h8ffly/image/upload/v1684097788/portfolio/gallery_bxygp8.webp"
 link: "https://docuchat.amir.day/"
 devpost: "https://devpost.com/software/my-first-errand"
 ---
