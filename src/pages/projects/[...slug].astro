@@ -13,7 +13,7 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props as { entry: CollectionEntry<"projects"> };
 const { Content } = await entry.render();
-const title = "amir ¬‿¬ - " + entry.data.title;
+const title = entry.data.title;
 ---
 
 <Layout title={title}>
