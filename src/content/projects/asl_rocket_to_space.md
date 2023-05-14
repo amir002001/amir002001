@@ -6,11 +6,11 @@ tech:
     - HTML
     - Javascript
     - Jquery
-shortDescription: The day to day life of an individual with a disability such as deafness is extremely challenging. Many educational and job opportunities are not available because of the communication gap. Very few individuals that are not deaf know American Sign Language (ASL) so this severely impacts deaf individuals and those that are hard of hearing. As a result, many of them resort to using a pen and paper or a smartphone to type what they are thinking and show it to the other person. We believe that this is very unfair that they have to do this and we believe that ASL to be more common in our community, and worldwide.
+shortDescription: ASL Rocket to Space is a web app promoting accessibility and education for individuals with disabilities, focusing on ASL learning. Through interactive activities and a space-themed interface, it aims to make ASL more common. Built with Django, CSS, HTML, and JavaScript, future plans include expanding features and supporting other disabilities and sign languages.
 awards:
     -  First Place 🥇 at Hackville 2021
 github: "https://github.com/gracinev/aslrockettospace/tree/master"
-image: "TODO"
+image: "https://res.cloudinary.com/df3h8ffly/image/upload/v1684093773/portfolio/asl-rocket.webp"
 devpost: "https://devpost.com/software/asl-rocket"
 ---
 The day to day life of an individual with a disability such as deafness is extremely challenging. Many educational and job opportunities are not available because of the communication gap. Very few individuals that are not deaf know American Sign Language (ASL) so this severely impacts deaf individuals and those that are hard of hearing. As a result, many of them resort to using a pen and paper or a smartphone to type what they are thinking and show it to the other person. We believe that this is very unfair that they have to do this and we believe that ASL to be more common in our community, and worldwide.

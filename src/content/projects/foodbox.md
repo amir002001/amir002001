@@ -10,16 +10,15 @@ tech:
     - React
     - Supabase
     - Vercel
-shortDescription: The idea for Foodbox was inspired by the growing problem of food waste in our society. According to the United Nations, one-third of all food produced globally is wasted, which not only has a significant environmental impact but also a social one, as so many people are struggling with food insecurity. We realized that grocery stores often have a surplus of certain products that don't sell well, and we wanted to find a way to help them move this inventory and avoid waste. At the same time, we saw an opportunity for consumers to discover new products at a discounted price.
+shortDescription: Foodbox is a platform that tackles food waste by partnering with grocery stores to offer discounted mystery boxes of their least popular items. Customers can discover new products while helping to reduce waste. The team built the web application using Next.js, Tailwind CSS, and Supabase PostgreSQL. Future plans include expanding partnerships, improving the user experience, and leveraging technology for personalized recommendations. 
 awards:
     -  First Place 🥇 at McHacks2023 (McGill)
     -  Telus Sustainability Challenge 🌱
 github: "https://github.com/AbeGeta/Foodbox"
 link: "https://foodbox.amir.day/"
-image: "TODO"
+image: "https://res.cloudinary.com/df3h8ffly/image/upload/v1684094745/portfolio/gallery_wp18zu.webp"
 devpost: "https://devpost.com/software/foodbox-qv3rfd"
 ---
-
 The idea for Foodbox was inspired by the growing problem of food waste in our society. According to the United Nations, one-third of all food produced globally is wasted, which not only has a significant environmental impact but also a social one, as so many people are struggling with food insecurity. We realized that grocery stores often have a surplus of certain products that don't sell well, and we wanted to find a way to help them move this inventory and avoid waste. At the same time, we saw an opportunity for consumers to discover new products at a discounted price.
 
 Another inspiration for Foodbox was the increasing awareness of the environmental impact of our food choices. Food production is a major contributor to greenhouse gas emissions and deforestation, and by reducing food waste, we can also reduce our environmental footprint. We believe that Foodbox is a small but meaningful step in the right direction, and we hope that it will inspire others to think creatively about how they can also make a positive impact on the planet and their communities.

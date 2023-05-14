@@ -1,6 +1,6 @@
 ---
 title: My First Errand
-shortDescription: It can be difficult for parents to teach and effectively communicate the importance of being independent to their children. All children should eventually be able to support themselves and have the necessary skills to be responsible. A hit Japanese TV show, “Old Enough” which was recently added to Netflix displays children of ages 2-5 years going on tasks outside the house, navigating through the different neighborhoods, and doing the errand given to them by their parents completely alone. Research has shown that these errands are of extreme importance in the development of the child’s social and problem-solving skills. As mentioned in an NPR article
+shortDescription:  A web application built on the React framework. It provides interactive games for young children to learn important skills related to independence and safety. The application focuses on tasks such as learning the child's address, understanding stranger danger, grocery shopping, and memorizing their phone number. 
 tech: 
     - Next.js
     - Figma

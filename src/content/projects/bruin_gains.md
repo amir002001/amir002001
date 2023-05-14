@@ -1,6 +1,6 @@
 ---
 title: Bruin Gains
-shortDescription: College students like ourselves face many challenges and difficulties while attending. Two common issues we find students face are making friends and taking care of their health. For many students, it can be daunting to meet new people and many become isolated. Also, during the semester, we are often too busy with deadlines and assignments so we neglect to incorporate any physical activity into our daily schedule. This results in being over or underweight which leads to self-esteem and mental health issues. We wanted to create an application that would break our habits and develop beneficial ones instead.
+shortDescription: Bruin Gains is a student-developed application for college students to find workout partners and overcome challenges like making friends and prioritizing physical health. The intuitive app allows users to connect based on shared interests and fitness levels. It features user profiles, chat functionality, and workout session organization.
 tech: 
     - Adobe XD
     - Firebase
@@ -9,8 +9,7 @@ tech:
 awards:
     -  Best Use of Google Cloud ☁️ at Hackville 2022
 github: "https://github.com/amir002001/bruin-gains-hackville"
-image: "TODO"
-link: "https://docuchat.amir.day/"
+image: "https://res.cloudinary.com/df3h8ffly/image/upload/q_63/v1684094395/portfolio/bruin-gains_vohhuv.webp"
 devpost: "https://devpost.com/software/bruingains"
 ---
 College students like ourselves face many challenges and difficulties while attending. Two common issues we find students face are making friends and taking care of their health. For many students, it can be daunting to meet new people and many become isolated. Also, during the semester, we are often too busy with deadlines and assignments so we neglect to incorporate any physical activity into our daily schedule. This results in being over or underweight which leads to self-esteem and mental health issues. We wanted to create an application that would break our habits and develop beneficial ones instead.
