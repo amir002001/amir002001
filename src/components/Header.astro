@@ -27,11 +27,11 @@ const links: Link[] = [
 ];
 ---
 
-<header class="flex justify-between py-6 px-16">
+<header class="flex justify-between px-2 py-6 md:px-16">
     <a href="/">
-        <Logo />
+        <Logo className="w-16" />
     </a>
-    <div class="flex gap-6 items-center">
+    <div class="flex gap-1 md:gap-6 items-center max-md:text-xs">
         {
             links.map((link) => {
                 if (link.title === title) {
