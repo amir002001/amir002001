@@ -1,6 +1,7 @@
 import { defineConfig } from "astro/config";
-
 import tailwind from "@astrojs/tailwind";
+
+import cloudflare from "@astrojs/cloudflare";
 
 // https://astro.build/config
 export default defineConfig({
@@ -9,6 +10,9 @@ export default defineConfig({
         headers: {
             "Cross-Origin-Embedder-Policy": "require-corp",
             "Cross-Origin-Opener-Policy": "same-origin",
+            "Access-Control-Allow-Origin": "https://res.cloudinary.com",
         },
     },
+    output: "server",
+    adapter: cloudflare(),
 });

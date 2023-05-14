@@ -8,20 +8,9 @@ tags:
 awards:
     -  Cohere Best Community Project Award
 github: "https://github.com/amir002001/DocuChat"
-image: ""
+image: "https://res.cloudinary.com/df3h8ffly/image/upload/q_61/v1684023326/portfolio/CleanShot_2023-05-13_at_20.12.51_l5whcp.webp"
 link: "https://docuchat.amir.day/"
 ---
-
-# DocuChat
-
-Created: March 1, 2023
-Figma: https://www.figma.com/file/NtnDH1izHCYzvBjVWNN9wR/DocuChat?node-id=1202%3A1041
-GitHub: https://github.com/amir002001/DocuChat
-Link: https://docuchat.amir.day/
-Technology: Javascript, Large Language Models, Next.js, Scraping, Serverless, TanStack Query, Vector Database
-
-## **💡 Inspiration 💡**
-
 As a SWE, I often found myself struggling to find the information I needed on GitHub Docs. Traditional keyword-based search engines often returned irrelevant results, making it difficult to quickly and efficiently find the information I was looking for.
 
 That's when I realized that a more effective search system would need to take into account the context and meaning of my search queries, rather than just matching keywords. I became interested in exploring the potential of machine learning and natural language processing to improve search accuracy and efficiency.
