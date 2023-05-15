@@ -8,7 +8,6 @@ tech:
     - Tailwind
 github: "https://github.com/amir002001/my-first-errand"
 image: "https://res.cloudinary.com/df3h8ffly/image/upload/v1684097788/portfolio/gallery_bxygp8.webp"
-link: "https://docuchat.amir.day/"
 devpost: "https://devpost.com/software/my-first-errand"
 ---
 It can be difficult for parents to teach and effectively communicate the importance of being independent to their children. All children should eventually be able to support themselves and have the necessary skills to be responsible. A hit Japanese TV show, “Old Enough” which was recently added to Netflix displays children of ages 2-5 years going on tasks outside the house, navigating through the different neighborhoods, and doing the errand given to them by their parents completely alone. Research has shown that these errands are of extreme importance in the development of the child’s social and problem-solving skills. As mentioned in an NPR article:
