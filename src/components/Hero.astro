@@ -79,8 +79,11 @@ import Link from "./Link.astro";
 
     // Change the subheading every 5 seconds
     let interval = setInterval(changeSubheading, 5000);
-    window.addEventListener("focus", () => {
-        interval = setInterval(changeSubheading, 5000);
+    document.addEventListener("visibilitychange", () => {
+        if (document.visibilityState === "hidden") {
+            clearInterval(interval);
+        } else {
+            interval = setInterval(changeSubheading, 5000);
+        }
     });
-    window.addEventListener("blur", () => clearInterval(interval));
 </script>
