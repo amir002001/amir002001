@@ -9,8 +9,6 @@ tech:
     - Javascript
     - Jquery
 shortDescription: HeartInSync is a website that aims to promote a healthy lifestyle and manage heart health among Canadian adults. It offers various features including nutrition guides, games, health resources, music, and a chatbot. The team collaborated and utilized their technical expertise in languages such as Spring Boot, JavaScript, HTML, and CSS to create an accessible and user-friendly platform. 
-awards:
-    -  First Place 🥇 at Hackville 2021
 github: "https://github.com/amir002001/HeartInSync"
 image: "https://res.cloudinary.com/df3h8ffly/image/upload/v1684095221/portfolio/gallery_imsoqs.webp"
 devpost: "https://devpost.com/software/heart-in-sync"
