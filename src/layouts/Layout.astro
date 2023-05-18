@@ -17,14 +17,24 @@ const concatTitle = title === undefined ? "amir ¬‿¬" : `amir ¬‿¬ - ${tit
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width" />
         <meta property="og:site_name" content="Amir Afshari" />
-        <meta property="og:description" content="I try my best :^)" />
         <meta property="og:title" content={concatTitle} />
         {
             entry !== undefined ? (
                 <>
                     <meta property="og:image" content={entry.data.image} />
+                    <meta
+                        property="og:description"
+                        content={entry.data.shortDescription}
+                    />
                 </>
-            ) : null
+            ) : (
+                <>
+                    <meta
+                        property="og:description"
+                        content="I try my best :^)"
+                    />
+                </>
+            )
         }
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
