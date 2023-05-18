@@ -1,10 +1,12 @@
 ---
+import type { CollectionEntry } from "astro:content";
 import Header from "../components/Header.astro";
 export interface Props {
     title?: string;
+    entry?: CollectionEntry<"projects">;
 }
 
-const { title } = Astro.props;
+const { title, entry } = Astro.props;
 
 const concatTitle = title === undefined ? "amir ¬‿¬" : `amir ¬‿¬ - ${title}`;
 ---
@@ -14,7 +16,16 @@ const concatTitle = title === undefined ? "amir ¬‿¬" : `amir ¬‿¬ - ${tit
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width" />
+        <meta property="og:site_name" content="Amir Afshari" />
+        <meta property="og:description" content="I try my best :^)" />
         <meta property="og:title" content={concatTitle} />
+        {
+            entry !== undefined ? (
+                <>
+                    <meta property="og:image" content={entry.data.image} />
+                </>
+            ) : null
+        }
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
