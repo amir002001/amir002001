@@ -21,6 +21,16 @@ const links: Link[] = [
     },
     {
         target: "_blank",
+        title: "linkedin",
+        href: "https://linkedin.com/in/amir-afshar",
+    },
+    {
+        target: "_blank",
+        title: "twitter",
+        href: "https://twitter.com/amirloveskiwis",
+    },
+    {
+        target: "_blank",
         title: "resume",
         href: "https://docs.google.com/document/d/1k8UKC6QRw4NxkY-lMdF1ShyOLkb9w2ugVLDQf63AKNo/edit?usp=sharing",
     },
@@ -31,18 +41,15 @@ const links: Link[] = [
     <a href="/">
         <Logo className="w-16" />
     </a>
-    <div class="max-sm:hidden flex gap-1 md:gap-6 items-center max-md:text-xs">
+    <div class="max-sm:hidden flex gap-2 md:gap-6 items-center max-md:text-xs">
         {
             links.map((link) => {
-                if (link.title === title) {
-                    return (
-                        <div>
-                            <span>[X]</span>
-                            <span>{title}</span>
-                        </div>
-                    );
-                }
-                return (
+                return link.title === title ? (
+                    <div>
+                        <span>[X]</span>
+                        <span>{title}</span>
+                    </div>
+                ) : (
                     <Link
                         href={link.href}
                         title={link.title}
