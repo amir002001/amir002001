@@ -3,8 +3,13 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="mainframe">
-    <section class="w-screen grow flex flex-col min-h-full pb-16 px-2 md:px-16">
+    <section
+        class="max-sm:hidden w-screen grow flex flex-col min-h-full pb-16 px-2 md:px-16"
+    >
         <div class="terminal w-full grow h-full bg-black border p-4"></div>
+    </section>
+    <section class="sm:hidden">
+        <h1>This page isn't meant for mobile :(</h1>
     </section>
 </Layout>
 
