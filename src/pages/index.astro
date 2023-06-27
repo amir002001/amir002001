@@ -1,8 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero.astro";
+import MobileToc from "../components/MobileToc.astro";
 ---
 
 <Layout>
     <Hero />
+    <!--only visible on sm breakpoint-->
+    <MobileToc />
 </Layout>
