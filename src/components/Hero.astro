@@ -7,38 +7,23 @@ import Link from "./Link.astro";
 >
     <h1 class="uppercase font-bold text-2xl">Amir Azizafshari</h1>
     <h2 id="subheading" class="font-medium">
-        {"Distributed Systems Enthusiast"}
+        {"use vim btw"}
     </h2>
     <Link href="mainframe" className="mt-4" title="init" />
 </section>
 
 <script>
     const subheadings = [
-        "Data Analysis Zealot",
-        "Infrastructure as Code Engineer",
-        "Continuous Integration Champion",
-        "Serverless Computing Proponent",
-        "Cloud Solution Architect",
-        "Deployment Automation Aficionado",
-        "Monitoring and Logging Specialist",
-        "Cloud Infrastructure Connoisseur",
-        "CI/CD Pipeline Engineer",
-        "Cloud Security Advocate",
-        "Full Stack Developer",
-        "Cloud-native Developer",
-        "Distributed Systems Enthusiast",
+        "terraforming your cloud",
+        "can't reach consensus",
+        "stuck on a raft",
+        "selfie with the zookeper",
+        "I am TLS (The Laughing Stock)",
+        "docker? I barely know her",
+        "use vim btw",
+        "chaotic evil engineering",
+        "load balancing my mental",
     ];
-    // let idx = 0;
-    // const changeSubheading = () => {
-    //     const newSubheading = subheadings[idx];
-    //     let middleStage = new Array();
-    //     if (idx === subheadings.length - 1) {
-    //         idx = 0;
-    //     } else {
-    //         idx++;
-    //     }
-    // };
-    // const interval = window.setInterval(changeSubheading, 3000);
     function getRandomCharacter() {
         const randomCharCode = Math.floor(Math.random() * (126 - 33 + 1)) + 33;
         return String.fromCharCode(randomCharCode);
