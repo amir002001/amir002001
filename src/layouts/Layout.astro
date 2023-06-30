@@ -76,10 +76,10 @@ const concatTitle = title === undefined ? "amir ¬‿¬" : `amir ¬‿¬ - ${tit
 <style is:global>
     :root {
         font-family: "Red Hat Mono", monospace;
+        @apply bg-slate-900;
     }
     html {
-        box-sizing: border-box;
-        @apply bg-slate-900 text-white;
+        @apply box-border overflow-hidden bg-slate-900 text-white;
     }
     body {
         @apply bg-slate-900;
