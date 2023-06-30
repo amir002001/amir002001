@@ -1,40 +1,13 @@
 ---
 import Logo from "../components/Logo.astro";
 import Link from "./Link.astro";
+import { links } from "../consts/links";
 
 export interface Props {
     title?: string;
 }
 
-interface Link {
-    title: string;
-    target?: string;
-    href: string;
-}
-
 const { title } = Astro.props;
-
-const links: Link[] = [
-    {
-        title: "projects",
-        href: "/projects",
-    },
-    {
-        target: "_blank",
-        title: "linkedin",
-        href: "https://linkedin.com/in/amir-afshar",
-    },
-    {
-        target: "_blank",
-        title: "twitter",
-        href: "https://twitter.com/amirloveskiwis",
-    },
-    {
-        target: "_blank",
-        title: "resume",
-        href: "https://docs.google.com/document/d/1k8UKC6QRw4NxkY-lMdF1ShyOLkb9w2ugVLDQf63AKNo/edit?usp=sharing",
-    },
-];
 ---
 
 <header class="flex justify-between px-6 py-6 md:px-16">
