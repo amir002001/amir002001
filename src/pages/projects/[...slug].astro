@@ -1,18 +1,21 @@
 ---
-import { CollectionEntry, getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import ProjectButtons from "../../components/ProjectButtons.astro";
-
-export async function getStaticPaths() {
-    const projectEntries = await getCollection("projects");
-    return projectEntries.map((entry) => ({
-        params: { slug: entry.slug },
-        props: { entry },
-    }));
+import { getEntry } from "astro:content";
+// 1. Get the slug from the incoming server request
+const { slug } = Astro.params;
+if (slug === undefined) {
+  throw new Error("Slug is required");
 }
-
-const { entry } = Astro.props as { entry: CollectionEntry<"projects"> };
+// 2. Query for the entry directly using the request slug
+const entry = await getEntry("projects", slug);
+// 3. Redirect if the entry does not exist
+if (entry === undefined) {
+  return Astro.redirect("/404");
+}
+// 4. (Optional) Render the entry to HTML in the template
 const { Content } = await entry.render();
+
 const title = entry.data.title;
 ---
 
