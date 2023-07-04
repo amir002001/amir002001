@@ -2,11 +2,12 @@ import type { CollectionEntry } from "astro:content";
 import { ProjectButtons } from "./ProjectButtons";
 
 export const Project = (props: { entry: CollectionEntry<"projects"> }) => {
+    const url = "/projects/" + props.entry.slug;
     return (
         <div className="p-8 border">
-            <h2 className="text-2xl font-semibold tracking-wider">
+            <a href={url} className="text-2xl font-semibold tracking-wider underline">
                 {props.entry.data.title}
-            </h2>
+            </a>
             <p className="mt-3 mb-4">{props.entry.data.shortDescription}</p>
             {props.entry.data.tech.length != 0 ? (
                 <div className="mt-2 text-sm">
