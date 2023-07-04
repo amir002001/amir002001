@@ -10,5 +10,4 @@
 
 👋 Hi there! I'm Amir, a friendly platform engineer and distributed systems enthusiast. I'm passionate about building scalable applications and optimizing cloud infrastructure 🚀. Let's create something amazing together!
 
-![Profile views](https://gpvc.arturio.dev/amir002001) 
 ![snake gif](https://github.com/amir002001/amir002001/blob/output/github-contribution-grid-snake-dark.svg)
