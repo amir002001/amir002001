@@ -10,6 +10,7 @@ const projectsCollection = defineCollection({
         image: z.string(),
         link: z.string().optional(),
         devpost: z.string().optional(),
+        date: z.string().datetime({ offset: true }),
     }),
 });
 // 3. Export a single `collections` object to register your collection(s)

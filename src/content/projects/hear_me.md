@@ -1,19 +1,21 @@
 ---
 title: Hear.Me
-shortDescription: Hear.Me is an application that uses QR codes to provide real-time transcription and categorization of announcements on public transportation for deaf individuals. It aims to improve accessibility and inclusivity by bridging the communication gap, empowering marginalized communities. The project successfully implemented live-stream transcription, QR code subscription, and user-friendly design. The next steps include pitching the idea to government organizations and refining the application based on feedback. 
-tech: 
-    - LLMs
-    - Firebase
-    - Python
-    - React Native
-    - lambda
-    - Vercel
-    - Speech to text
-    - Scraping
+shortDescription: Hear.Me is an application that uses QR codes to provide real-time transcription and categorization of announcements on public transportation for deaf individuals. It aims to improve accessibility and inclusivity by bridging the communication gap, empowering marginalized communities. The project successfully implemented live-stream transcription, QR code subscription, and user-friendly design. The next steps include pitching the idea to government organizations and refining the application based on feedback.
+tech:
+  - LLMs
+  - Firebase
+  - Python
+  - React Native
+  - lambda
+  - Vercel
+  - Speech to text
+  - Scraping
 github: "https://github.com/bruhspicy/hear-me"
 image: "https://res.cloudinary.com/df3h8ffly/image/upload/v1684095102/portfolio/gallery_qmpo5w.webp"
 devpost: "https://devpost.com/software/hearme-pt4ila"
+date: "2023-01-21T08:22:15-0400"
 ---
+
 We were inspired to create this project because of our own personal experiences with public transportation. As frequent users, we often missed important announcements or our stop due to unclear audio or distractions. This realization made us imagine how much more challenging this must be for deaf individuals who rely on visual cues to access the same information. This sparked the idea for our project - an application that uses QR codes to provide real-time transcription and categorization of the conductor's words to improve accessibility and inclusivity for deaf individuals on public transportation. We aim to bridge the communication gap and empower marginalized communities through this innovative solution.
 
 ## **What it does**
@@ -28,9 +30,9 @@ Our application consists of two major components:
 
 - The service is hooked to a laptop microphone stream that is processed in real-time by Rev.ai.
 - The resulting close caption is then classified by Cohere to identify the type of announcement.
-    - Next-stop announcement (e.g. next stop is Oakville GO)
-    - Assistance announcement (e.g. coaches 26 and 27 will not be opening at Union Station)
-    - Delay announcement (e.g. the train will be arriving 10 minutes late due to a delay at Oshawa GO)
+  - Next-stop announcement (e.g. next stop is Oakville GO)
+  - Assistance announcement (e.g. coaches 26 and 27 will not be opening at Union Station)
+  - Delay announcement (e.g. the train will be arriving 10 minutes late due to a delay at Oshawa GO)
 - The classification and the announcement itself are then posted to a Firestore collection.
 
 ### **A React-Native mobile application**
@@ -38,7 +40,7 @@ Our application consists of two major components:
 - Scans a QR code (e.g. a QR code on the back of your seat on the train)
 - Subscribes to the Firestore collection based on the QR code you scan
 - Takes the latest logs from the store and displays them to users as a card that is color-coded depending on the type of announcement! 😱
-    - Due to it being a live data collection, Firebase will update the observer (our app) if there is new data 🎉🎉🎉
+  - Due to it being a live data collection, Firebase will update the observer (our app) if there is new data 🎉🎉🎉
 - There is also a summary feature where all the recent announcements are summarized using Cohere and displayed in an easy-to-digest format! 🫡
 
 ## **Challenges we ran into**

@@ -12,6 +12,7 @@ tech:
   - SQLite
 github: "https://github.com/amir002001/Returnify/"
 image: "https://res.cloudinary.com/df3h8ffly/image/upload/v1684097011/portfolio/returnify.webp"
+date: "2022-03-13T08:22:15-0400"
 ---
 
 In a world dominated by convenience and efficiency, the team behind BAM (Better Automated Returns) recognized the need for a revolution in the return experience. Tired of the mundane task of physically returning items to post offices or stores, the team set out to create a brand new solution that would transform the way returns are handled. By combining an uber-model with cutting-edge technologies, BAM promises to deliver exceptional results and redefine the return process for consumers.

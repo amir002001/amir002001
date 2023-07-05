@@ -1,18 +1,21 @@
 ---
-import { CollectionEntry, getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import ProjectButtons from "../../components/ProjectButtons.astro";
-
-export async function getStaticPaths() {
-    const projectEntries = await getCollection("projects");
-    return projectEntries.map((entry) => ({
-        params: { slug: entry.slug },
-        props: { entry },
-    }));
+import { getEntry } from "astro:content";
+// 1. Get the slug from the incoming server request
+const { slug } = Astro.params;
+if (slug === undefined) {
+  throw new Error("Slug is required");
 }
-
-const { entry } = Astro.props as { entry: CollectionEntry<"projects"> };
+// 2. Query for the entry directly using the request slug
+const entry = await getEntry("projects", slug);
+// 3. Redirect if the entry does not exist
+if (entry === undefined) {
+  return Astro.redirect("/404");
+}
+// 4. (Optional) Render the entry to HTML in the template
 const { Content } = await entry.render();
+
 const title = entry.data.title;
 ---
 
@@ -25,7 +28,7 @@ const title = entry.data.title;
             entry.data.awards != undefined &&
             entry.data.awards.length != 0 ? (
                 <div class="mt-4 text-sm">
-                    <span class="font-bold">Awarded:</span>{" "}
+                    <span class="font-bold tracking-wide">Awarded:</span>{" "}
                     {entry.data.awards.map((award, index) => {
                         const builder = [];
                         builder.push(award);
@@ -40,7 +43,7 @@ const title = entry.data.title;
         {
             entry.data.tech.length != 0 ? (
                 <div class="mt-2 text-sm">
-                    <span class="font-bold ">Technologies:</span>{" "}
+                    <span class="font-bold tracking-wide">Technologies:</span>{" "}
                     {entry.data.tech.map((tech, index) => {
                         const builder = [];
                         builder.push(tech);
@@ -52,6 +55,10 @@ const title = entry.data.title;
                 </div>
             ) : null
         }
+                <div class="mt-2 text-sm">
+                    <span class="font-bold tracking-wide">First Commit:</span>{" "}
+                    {(new Date(entry.data.date)).toLocaleDateString("en-US")}
+                </div>
         <img
             class="w-fit mt-4"
             crossorigin="anonymous"

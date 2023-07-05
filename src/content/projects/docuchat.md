@@ -1,17 +1,19 @@
 ---
-title: DocuChat 
+title: DocuChat
 shortDescription: DocuChat is a contextual search feature for GitHub's documentation, powered by machine learning and natural language processing. It uses Cohere's Large Language Model and a vector database to provide accurate and efficient search results. By summarizing and embedding GitHub's documentation, developers can quickly find the information they need, transforming the search experience and inspiring the use of AI in search applications.
-tech: 
-    - Next.js
-    - LLMs
-    - Vector Database
-    - Scraping
+tech:
+  - Next.js
+  - LLMs
+  - Vector Database
+  - Scraping
 awards:
-    -  Cohere Best Community Project Award
+  - Cohere Best Community Project Award
 github: "https://github.com/amir002001/DocuChat"
 image: "https://res.cloudinary.com/df3h8ffly/image/upload/q_61/v1684023326/portfolio/CleanShot_2023-05-13_at_20.12.51_l5whcp.webp"
 link: "https://docuchat.amir.day/"
+date: "2023-02-25T08:22:15-0400"
 ---
+
 As a SWE, I often found myself struggling to find the information I needed on GitHub Docs. Traditional keyword-based search engines often returned irrelevant results, making it difficult to quickly and efficiently find the information I was looking for.
 
 That's when I realized that a more effective search system would need to take into account the context and meaning of my search queries, rather than just matching keywords. I became interested in exploring the potential of machine learning and natural language processing to improve search accuracy and efficiency.
@@ -32,7 +34,7 @@ Overall, this project aims to make it easier for developers to find the informat
 
 ## **🏗️ How I built it 🏗️**
 
-I built the project using a Node.JS scraper in the backend that scrapes every doc on GitHub docs, summarizes them, and then embeds them. 
+I built the project using a Node.JS scraper in the backend that scrapes every doc on GitHub docs, summarizes them, and then embeds them.
 
 On the front-end I used Next.JS, React Query, and TailwindCSS to make it all look pretty!
 

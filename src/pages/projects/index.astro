@@ -1,0 +1,12 @@
+---
+import {getCollection} from "astro:content"
+export const prerender = false
+import Layout from "../../layouts/Layout.astro";
+import {ProjectsList} from "../../components/ProjectsList"
+
+const allProjects = await getCollection("projects");
+---
+
+<Layout title="projects">
+    <ProjectsList allProjects={allProjects} client:idle />
+</Layout>
