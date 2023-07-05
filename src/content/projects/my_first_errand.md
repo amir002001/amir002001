@@ -1,19 +1,20 @@
 ---
 title: My First Errand
-shortDescription:  A web application built on the React framework. It provides interactive games for young children to learn important skills related to independence and safety. The application focuses on tasks such as learning the child's address, understanding stranger danger, grocery shopping, and memorizing their phone number. 
-tech: 
-    - Next.js
-    - Figma
-    - React
-    - Tailwind
+shortDescription: A web application built on the React framework. It provides interactive games for young children to learn important skills related to independence and safety. The application focuses on tasks such as learning the child's address, understanding stranger danger, grocery shopping, and memorizing their phone number.
+tech:
+  - Next.js
+  - Figma
+  - React
+  - Tailwind
 github: "https://github.com/amir002001/my-first-errand"
 image: "https://res.cloudinary.com/df3h8ffly/image/upload/v1684097788/portfolio/gallery_bxygp8.webp"
 devpost: "https://devpost.com/software/my-first-errand"
+date: "2022-11-19T08:22:15-0400"
 ---
+
 It can be difficult for parents to teach and effectively communicate the importance of being independent to their children. All children should eventually be able to support themselves and have the necessary skills to be responsible. A hit Japanese TV show, “Old Enough” which was recently added to Netflix displays children of ages 2-5 years going on tasks outside the house, navigating through the different neighborhoods, and doing the errand given to them by their parents completely alone. Research has shown that these errands are of extreme importance in the development of the child’s social and problem-solving skills. As mentioned in an NPR article:
 
 > "Autonomous play has been a really important part of child development throughout human evolutionary history," says behavioral scientist Dorsa Amir at the University of California, Berkeley. "And actually, it was a feature of American society until relatively recently as well." This inspired us to create this fun and interactive game for children to have a sort of tutorial for what to expect in the real world and for dealing with common scenarios that they might face.
-> 
 
 ## **What it does**
 

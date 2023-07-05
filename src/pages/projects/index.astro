@@ -2,15 +2,11 @@
 import {getCollection} from "astro:content"
 export const prerender = false
 import Layout from "../../layouts/Layout.astro";
-import {Project} from "../../components/Project";
+import {ProjectsList} from "../../components/ProjectsList"
 
 const allProjects = await getCollection("projects");
 ---
 
 <Layout title="projects">
-    <section class="max-w-[65ch] w-4/5 my-12">
-        <ul class="flex flex-col gap-8">
-            {allProjects.map((project) => <Project entry={project} />)}
-        </ul>
-    </section>
+    <ProjectsList allProjects={allProjects} client:idle />
 </Layout>
