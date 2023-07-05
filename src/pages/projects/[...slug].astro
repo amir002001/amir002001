@@ -28,7 +28,7 @@ const title = entry.data.title;
             entry.data.awards != undefined &&
             entry.data.awards.length != 0 ? (
                 <div class="mt-4 text-sm">
-                    <span class="font-bold">Awarded:</span>{" "}
+                    <span class="font-bold tracking-wide">Awarded:</span>{" "}
                     {entry.data.awards.map((award, index) => {
                         const builder = [];
                         builder.push(award);
@@ -43,7 +43,7 @@ const title = entry.data.title;
         {
             entry.data.tech.length != 0 ? (
                 <div class="mt-2 text-sm">
-                    <span class="font-bold ">Technologies:</span>{" "}
+                    <span class="font-bold tracking-wide">Technologies:</span>{" "}
                     {entry.data.tech.map((tech, index) => {
                         const builder = [];
                         builder.push(tech);
@@ -55,6 +55,10 @@ const title = entry.data.title;
                 </div>
             ) : null
         }
+                <div class="mt-2 text-sm">
+                    <span class="font-bold tracking-wide">First Commit:</span>{" "}
+                    {(new Date(entry.data.date)).toLocaleDateString("en-US")}
+                </div>
         <img
             class="w-fit mt-4"
             crossorigin="anonymous"
