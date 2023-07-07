@@ -1,5 +1,5 @@
 import { z, defineCollection } from "astro:content";
-// 2. Define a schema for each collection you'd like to validate.
+
 const projectsCollection = defineCollection({
     schema: z.object({
         title: z.string(),
@@ -13,7 +13,18 @@ const projectsCollection = defineCollection({
         date: z.string().datetime({ offset: true }),
     }),
 });
-// 3. Export a single `collections` object to register your collection(s)
+
+const workCollection = defineCollection({
+    schema: z.object({
+        title: z.string(),
+        shortDescription: z.string(),
+        image: z.string(),
+        startDate: z.string().datetime({ offset: true }),
+        endDate: z.string().datetime({ offset: true }).optional(),
+    }),
+});
+
 export const collections = {
     projects: projectsCollection,
+    work: workCollection,
 };
