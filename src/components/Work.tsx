@@ -1,13 +1,31 @@
 import type { CollectionEntry } from "astro:content";
 
+const DATE_OPTIONS: Intl.DateTimeFormatOptions = {
+    year: "numeric",
+    month: "long",
+};
+
 export const Work = (props: { entry: CollectionEntry<"work"> }) => {
     const url = "/work/" + props.entry.slug;
+
     return (
         <div className="p-8 border">
             <a href={url} className="text-2xl font-semibold tracking-wider underline">
                 {props.entry.data.title}
             </a>
-            <p className="mt-3 mb-4">{props.entry.data.shortDescription}</p>
+            <h3 className="font-medium tracking-wide">{props.entry.data.role}</h3>
+            <h4>
+                {formatDate(new Date(props.entry.data.startDate)) +
+                    (props.entry.data.endDate
+                        ? ` - ${formatDate(new Date(props.entry.data.endDate))}`
+                        : "")}
+            </h4>
+            <p>{props.entry.data.shortDescription}</p>
         </div>
     );
+};
+
+const formatDate = (date: Date): string => {
+    const formattedDate = date.toLocaleString("en-US", DATE_OPTIONS);
+    return formattedDate;
 };

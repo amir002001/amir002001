@@ -6,6 +6,6 @@ import {WorkList} from "../../components/WorkList"
 const allProjects = await getCollection("work");
 ---
 
-<Layout title="projects">
+<Layout title="work">
     <WorkList allWork={allProjects} client:idle />
 </Layout>

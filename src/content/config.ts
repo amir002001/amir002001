@@ -17,6 +17,7 @@ const projectsCollection = defineCollection({
 const workCollection = defineCollection({
     schema: z.object({
         title: z.string(),
+        role: z.string(),
         shortDescription: z.string(),
         image: z.string(),
         startDate: z.string().datetime({ offset: true }),
