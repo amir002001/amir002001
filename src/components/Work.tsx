@@ -10,17 +10,28 @@ export const Work = (props: { entry: CollectionEntry<"work"> }) => {
 
     return (
         <div className="p-8 border">
-            <a href={url} className="text-2xl font-semibold tracking-wider underline">
+            <img
+                className="w-fit"
+                crossOrigin="anonymous"
+                src={props.entry.data.image}
+                alt={`${props.entry.data.title} project image`}
+            />
+            <a
+                href={url}
+                className="block mt-4 text-2xl font-semibold tracking-wider underline"
+            >
                 {props.entry.data.title}
             </a>
-            <h3 className="font-medium tracking-wide">{props.entry.data.role}</h3>
-            <h4>
+            <h3 className="text-sm font-medium tracking-wide">
+                {props.entry.data.role}
+            </h3>
+            <h4 className="text-sm">
                 {formatDate(new Date(props.entry.data.startDate)) +
                     (props.entry.data.endDate
                         ? ` - ${formatDate(new Date(props.entry.data.endDate))}`
                         : "")}
             </h4>
-            <p>{props.entry.data.shortDescription}</p>
+            <p className="mt-2">{props.entry.data.shortDescription}</p>
         </div>
     );
 };

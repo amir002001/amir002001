@@ -1,7 +1,7 @@
 ---
 title: GEOTAB
 role: Software Engineer Intern
-shortDescription: Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.
+shortDescription: What started as a POC project, has now become one of the projects that I'm most proud of. A group of 2 other interns, a mentor, and I were assigned the task of creating a city twin of Kingston with visualizations of video data from model-equipped cameras deployed to city buses. The project is now in production, being used by the city and maintained by GEOTAB.
 image: https://res.cloudinary.com/df3h8ffly/image/upload/q_auto:eco/v1688692245/geotab-feature_rkazku.webp
 startDate: 2022-04-01T00:00:00-0400
 endDate: 2022-12-01T00:00:00-0400

@@ -1,7 +1,7 @@
 ---
 title: Sheridan FAAD
 role: Software Engineer Intern
-shortDescription: Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.
+shortDescription: Worked with an old-school sys admin on a legacy Angular.JS and Grails video streaming app. I realized the importance of mastering my tools, as my IDE comfort was not always guaranteed. While we did rewrite part of the app, most of the work involved tweaking and fine-tuning the existing system to fit our needs.
 image: https://res.cloudinary.com/df3h8ffly/image/upload/q_auto:eco/v1688692586/computer_animation_oo6buv.webp
 startDate: 2022-01-01T00:00:00-0500
 endDate: 2022-04-01T00:00:00-0500
