@@ -22,23 +22,6 @@ const title = entry.data.title;
     <section class="max-w-[65ch] w-4/5 my-12">
         <h1 class="text-3xl font-bold mt-4">{entry.data.title}</h1>
         <span class="block w-full border-t border-dotted mt-4"></span>
-        {
-            entry.data.awards != null &&
-            entry.data.awards != undefined &&
-            entry.data.awards.length != 0 ? (
-                <div class="mt-4 text-sm">
-                    <span class="font-bold tracking-wide">Awarded:</span>{" "}
-                    {entry.data.awards.map((award, index) => {
-                        const builder = [];
-                        builder.push(award);
-                        if (index != entry.data.awards!.length - 1) {
-                            builder.push(", ");
-                        }
-                        return builder.join("");
-                    })}
-                </div>
-            ) : null
-        }
         <img
             class="w-fit mt-4"
             crossorigin="anonymous"
