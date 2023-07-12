@@ -22,6 +22,7 @@ const concatTitle = title === undefined ? "amir ¬‿¬" : `amir ¬‿¬ - ${tit
         <meta property="og:url" content="https://amir.day" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={concatTitle} />
 
         {
             entry !== undefined ? (
@@ -38,10 +39,18 @@ const concatTitle = title === undefined ? "amir ¬‿¬" : `amir ¬‿¬ - ${tit
                         property="og:description"
                         content={entry.data.shortDescription}
                     />
+                    <meta
+                        property="twitter:description"
+                        content={entry.data.shortDescription}
+                    />
                 </>
             ) : (
                 <>
                     <meta property="og:description" content="I try my best" />
+                    <meta
+                        property="twitter:description"
+                        content="I try my best"
+                    />
                     <meta
                         property="og:image"
                         content="https://res.cloudinary.com/df3h8ffly/image/upload/v1688822202/%EF%B8%8F_Start_screen_3_udgyff.png"
