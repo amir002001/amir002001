@@ -12,6 +12,7 @@ awards:
 github: "https://github.com/gracinev/aslrockettospace/tree/master"
 image: "https://res.cloudinary.com/df3h8ffly/image/upload/v1684093773/portfolio/asl-rocket.webp"
 devpost: "https://devpost.com/software/asl-rocket"
+link: "https://aslrockettospace.uk.r.appspot.com"
 date: "2021-02-06T08:22:15-0400"
 ---
 
