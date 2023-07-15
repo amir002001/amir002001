@@ -15,7 +15,7 @@ awards:
   - First Place 🥇 at McHacks2023 (McGill)
   - Telus Sustainability Challenge 🌱
 github: "https://github.com/AbeGeta/Foodbox"
-link: "foodbox-two.vercel.app"
+link: "https://foodbox-two.vercel.app"
 image: "https://res.cloudinary.com/df3h8ffly/image/upload/v1684094745/portfolio/gallery_wp18zu.webp"
 devpost: "https://devpost.com/software/foodbox-qv3rfd"
 date: "2023-01-28T08:22:15-0400"
