@@ -1,4 +1,6 @@
 import type { CollectionEntry } from "astro:content";
+import { useState } from "react";
+import classnames from "classnames";
 
 const DATE_OPTIONS: Intl.DateTimeFormatOptions = {
     year: "numeric",
@@ -7,21 +9,29 @@ const DATE_OPTIONS: Intl.DateTimeFormatOptions = {
 
 export const Work = (props: { entry: CollectionEntry<"work"> }) => {
     const url = "/work/" + props.entry.slug;
+    const [mouseOver, setMouseOver] = useState(false);
 
     return (
-        <div className="p-8 border">
+        <a
+            href={url}
+            className={classnames("p-8 border", mouseOver && "border-rose-500")}
+            onMouseOver={() => setMouseOver(true)}
+            onMouseOut={() => setMouseOver(false)}
+        >
             <img
                 className="w-fit"
                 crossOrigin="anonymous"
                 src={props.entry.data.image}
                 alt={`${props.entry.data.title} project image`}
             />
-            <a
-                href={url}
-                className="block mt-4 text-2xl font-semibold tracking-wider underline"
+            <h2
+                className={classnames(
+                    "block mt-4 text-2xl font-semibold tracking-wider underline",
+                    mouseOver && "text-rose-500"
+                )}
             >
                 {props.entry.data.title}
-            </a>
+            </h2>
             <h3 className="text-sm font-medium tracking-wide">
                 {props.entry.data.role}
             </h3>
@@ -32,7 +42,7 @@ export const Work = (props: { entry: CollectionEntry<"work"> }) => {
                         : "")}
             </h4>
             <p className="mt-2">{props.entry.data.shortDescription}</p>
-        </div>
+        </a>
     );
 };
 

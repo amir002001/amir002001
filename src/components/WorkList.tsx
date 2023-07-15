@@ -37,7 +37,7 @@ export const WorkList = (props: { allWork: CollectionEntry<"work">[] }) => {
                         value="date"
                         type="radio"
                         name="inline-radio-group"
-                        className="w-4 h-4 bg-gray-100 text-slate-700 ring-slate-700 focus:ring-slate-800"
+                        className="w-4 h-4 text-rose-300 bg-rose-300 ring-rose-500 focus:ring-rose-500"
                         checked={sortKey === "date"}
                         onChange={handleSortKeyChange}
                     />
