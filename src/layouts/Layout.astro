@@ -3,7 +3,7 @@ import type { CollectionEntry } from "astro:content";
 import Header from "../components/Header.astro";
 export interface Props {
     title?: string;
-    entry?: CollectionEntry<"projects">;
+    entry?: CollectionEntry<"projects"> | CollectionEntry<"work">;
 }
 
 const { title, entry } = Astro.props;
@@ -19,21 +19,45 @@ const concatTitle = title === undefined ? "amir ¬‿¬" : `amir ¬‿¬ - ${tit
         <meta property="og:site_name" content="Amir Afshari" />
         <meta property="og:title" content={concatTitle} />
         <meta name="theme-color" content="#111729" />
+        <meta property="og:url" content="https://amir.day" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={concatTitle} />
 
         {
             entry !== undefined ? (
                 <>
-                    <meta property="og:image" content={entry.data.image} />
+                    <meta
+                        property="og:image"
+                        content={`https://ogmir.fly.dev/api/v1/opengraph?image=${entry.data.image}&title=${entry.data.title}`}
+                    />
+                    <meta
+                        property="twitter:image"
+                        content={`https://ogmir.fly.dev/api/v1/opengraph?image=${entry.data.image}&title=${entry.data.title}`}
+                    />
                     <meta
                         property="og:description"
+                        content={entry.data.shortDescription}
+                    />
+                    <meta
+                        property="twitter:description"
                         content={entry.data.shortDescription}
                     />
                 </>
             ) : (
                 <>
+                    <meta property="og:description" content="I try my best" />
                     <meta
-                        property="og:description"
-                        content="I try my best :^)"
+                        property="twitter:description"
+                        content="I try my best"
+                    />
+                    <meta
+                        property="og:image"
+                        content="https://res.cloudinary.com/df3h8ffly/image/upload/v1688822202/%EF%B8%8F_Start_screen_3_udgyff.png"
+                    />
+                    <meta
+                        name="twitter:image"
+                        content="https://res.cloudinary.com/df3h8ffly/image/upload/v1688822202/%EF%B8%8F_Start_screen_3_udgyff.png"
                     />
                 </>
             )
