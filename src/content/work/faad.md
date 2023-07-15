@@ -1,34 +1,32 @@
 ---
 title: Sheridan FAAD
 role: Software Engineer Intern
-shortDescription: Worked with an old-school sys admin on a legacy Angular.JS and Grails video streaming app. I realized the importance of mastering my tools, as my IDE comfort was not always guaranteed. While we did rewrite part of the app, most of the work involved tweaking and fine-tuning the existing system to fit our needs.
+shortDescription: My experience working with the Facluty of Animation, Arts, and Design to create an internal streaming platform for students' capstone projects. This was my first time dealing with on-premise infrastructure and I got to work with an actual server room!
 image: https://res.cloudinary.com/df3h8ffly/image/upload/q_auto:eco/v1688692586/computer_animation_oo6buv.webp
 startDate: 2022-01-01T00:00:00-0500
 endDate: 2022-04-01T00:00:00-0500
 ---
 
-ThinkResearch was the first and one of the most impactful internships of my CS career. During my time at ThinkResearch, I was thrown at a daunting React codebase with barely any knowledge of the framework and had to learn an immense amount of knowledge over a short period.
+an old-school sysadmin and I worked on a legacy Angular.JS and Grails internal streaming app for students' capstone projects. While we did rewrite part of the app, most of the work involved tweaking and fine-tuning the existing system to fit our needs. It was amazing to see it come to life and witness students come in and use it. It was one of the first experiences where I saw actual users picking up a product I shipped. At the time I was working on this project, I remember being a bit pissed that we were strictly working with on-premise solutions, but thinking back at it now, I miss the feeling of going into that cold server room.
 
 ## 💼 Responsibilities and Projects 💼
 
-During my internship term, I was part of a big initiative to move off of the React Native codebase and fully dedicate to a Progressive Web Application (PWA). The codebase was massive and it used Redux as an application state manager.
+I was responsible for the project as a whole, with my coworker basically being my product manager and mentor. He would give me feedback on my work and unblock me when I was stuck.
 
-This brings us to the other initiative of trying to decouple the server state from the client state by moving most of the state logic to the backend, allowing it to be fetched via the GraphQL API consumed by Apollo.
-
-My main task was writing the micro-frontend involving the calling/chat feature between the patient and the doctor, which used AWS Chime as the framework.
+The main responsibilities consisted of migrating the old schema to fit our use-case needs, moving off the deprecated Angular.JS frontend, creating an engaging experience, and deploying it all into production.
 
 ## 📚 Lessons Learned 📚
 
-This was one of the many, but much-needed times where my ego was shattered. I thought I knew so much, yet it turned out I knew so little. This feeling of inadequacy sent me into a frenzy of self-improvement.
+We have created some amazing abstractions over technology. So amazing, that it is possible to use these abstractions for a long time without knowing the underlying complexity. Yet, I realized how important it is to understand what is happening under the hood. It's important to know how my files are served, my database is managed, and my server is maintained. Not only does this give me a better grasp of the entire picture, one day, when the abstractions fail, I'll be the one who has at least a clue on how to fix them.
 
-ThinkResearch was my first exposure to an approach I have been trying to perfect in every new and daunting challenge I take on, that being the approach of learning fast in a short period. I started following React content creators on YouTube, Twitter, and Medium. I would listen to the Syntax FM podcast by WesBos daily, and I caught up with tons of blog content written by legends such as Dan Abramov, Kent C. Odds, TKDodo, etc., taking notes and trying to make side projects with what I learned.
-
-Another aspect of myself that I noticed at ThinkResearch was that I overthink asking questions. This was at the peak of the pandemic as well, and I blame it on my lack of social skills on communication platforms like Slack and Teams at the time, but I was so afraid of asking my seniors and leads questions. I won't forget the time my lead scheduled a one-on-one with me to ensure that internships are two-way streets. I am there to get the job done, and they are there to show me how to get there.
+Another lesson I have to carry away is from my mentor and coworker. At the time I was pushing heavily to just completely move off to a new solution. He told me a rewrite is always the easiest way, but maintaining is what showcases someone's abilities to tackle hard problems. I remember it to this day and make sure to always try my best to work with what's already there and improve upon that instead of tearing everything up and trying again.
 
 ## 🏆 Achievements and Contributions 🏆
 
-By the end of the term, the call/chat feature was written, unit-tested, and integrated with AWS Chime. It was a little hard to unit-test interactions with Chime using playtesting, but we managed to find ways around it. I helped migrate off the Redux store and learned quite about GraphQL quirks. I am thankful for the amazing people at ThinkResearch and will try my best to apply the knowledge they taught me throughout my career.
+We managed to move off of the legacy Angular.JS code and shift to Svelte, connecting it to the previous Grails backend. I also implemented a TikTok-style infinite scroll using a pagination API I implemented into the Grails backend.
+
+Another thing we worked on was a Matomo self-hosted analytics service that would give students insights into post interactions, bounce rates, etc.
 
 ## 🔮 Core Memory 🔮
 
-I'm trying to write about a core memory for each position I've had. The most memorable one at ThinkResearch has to be when I forgot to mute myself and burped the loudest possible chunk of air I've ever exhaled in my whole life followed by a solid 5 seconds of silence and laughter by the entire team. I will never recover from this...
+I helped my coworker set up a brand-new server rack. It felt like piecing a Lego together. Something about watching it come online and connect to the grid felt magical.

@@ -11,7 +11,7 @@ ThinkResearch was the first and one of the most impactful internships of my CS c
 
 ## 💼 Responsibilities and Projects 💼
 
-During my internship term, I was part of a big initiative to move off of the React Native codebase and fully dedicate to a Progressive Web Application (PWA). The codebase was massive and it used Redux as an application state manager.
+During my internship term, I was part of a big initiative to move off of the React Native codebase and fully dedicate to a Progressive Web Application (PWA). The codebase was massive, and it used Redux as an application state manager.
 
 This brings us to the other initiative of trying to decouple the server state from the client state by moving most of the state logic to the backend, allowing it to be fetched via the GraphQL API consumed by Apollo.
 
@@ -19,7 +19,7 @@ My main task was writing the micro-frontend involving the calling/chat feature b
 
 ## 📚 Lessons Learned 📚
 
-This was one of the many, but much-needed times where my ego was shattered. I thought I knew so much, yet it turned out I knew so little. This feeling of inadequacy sent me into a frenzy of self-improvement.
+This was one of the many, but much-needed times when my ego was shattered. I thought I knew so much, yet it turned out I knew so little. This feeling of inadequacy sent me into a frenzy of self-improvement.
 
 ThinkResearch was my first exposure to an approach I have been trying to perfect in every new and daunting challenge I take on, that being the approach of learning fast in a short period. I started following React content creators on YouTube, Twitter, and Medium. I would listen to the Syntax FM podcast by WesBos daily, and I caught up with tons of blog content written by legends such as Dan Abramov, Kent C. Odds, TKDodo, etc., taking notes and trying to make side projects with what I learned.
 
