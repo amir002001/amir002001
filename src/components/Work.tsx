@@ -26,10 +26,15 @@ export const Work = (props: { entry: CollectionEntry<"work"> }) => {
             />
             <h2
                 className={classnames(
-                    "block mt-4 text-2xl font-semibold tracking-wider underline",
-                    mouseOver && "text-rose-500"
+                    "block mt-4 text-2xl font-semibold tracking-wider relative",
+                    mouseOver && "text-rose-500 underline"
                 )}
             >
+                <span
+                    className={classnames("absolute -left-5", mouseOver ? "" : "hidden")}
+                >
+                    &gt;
+                </span>
                 {props.entry.data.title}
             </h2>
             <h3 className="text-sm font-medium tracking-wide">
