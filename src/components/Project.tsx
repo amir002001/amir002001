@@ -22,10 +22,15 @@ export const Project = (props: { entry: CollectionEntry<"projects"> }) => {
             />
             <h2
                 className={classnames(
-                    "block mt-4 text-2xl font-semibold tracking-wider underline",
-                    mouseOver && "text-rose-500"
+                    "block mt-4 text-2xl font-semibold tracking-wider relative",
+                    mouseOver && "text-rose-500 underline"
                 )}
             >
+                <span
+                    className={classnames("absolute -left-5", mouseOver ? "" : "hidden")}
+                >
+                    &gt;
+                </span>
                 {props.entry.data.title}
             </h2>
             <p className="mt-3 mb-4">{props.entry.data.shortDescription}</p>
