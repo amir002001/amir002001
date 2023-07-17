@@ -18,7 +18,7 @@ After realizing I had no users on my blog engine, I realized I needed to do some
 
 ## Context
 
-I attended a Go meetup called [Go Toronto](https://www.meetup.com/go-toronto/) where a certain individual called [ Michael Fridman ](https://github.com/mfridman) gave a talk on how he used the Go Graphics package to generate Open Graph images for his project.
+I attended a Go meetup called [Go Toronto](https://www.meetup.com/go-toronto/) where a certain individual called [Michael Fridman](https://github.com/mfridman) gave a talk on how he used the Go Graphics package to generate Open Graph images for his project.
 
 I was intrigued and took down a note for later. Previously I'd taken down notes for the Vercel OG Image library as well but never interfaced with it.
 
