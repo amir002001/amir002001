@@ -1,6 +1,6 @@
 ---
 title: DocuChat
-shortDescription: DocuChat is a contextual search feature for GitHub's documentation, powered by machine learning and natural language processing. It uses Cohere's Large Language Model and a vector database to provide accurate and efficient search results. By summarizing and embedding GitHub's documentation, developers can quickly find the information they need, transforming the search experience and inspiring the use of AI in search applications.
+shortDescription: A contextual search feature for GitHub's documentation, using machine learning and Cohere's Large Language Model to provide efficient and accurate search results by summarizing and embedding the documentation.
 tech:
   - Next.js
   - LLMs

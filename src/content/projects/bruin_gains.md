@@ -1,6 +1,6 @@
 ---
 title: Bruin Gains
-shortDescription: Bruin Gains is a student-developed application for college students to find workout partners and overcome challenges like making friends and prioritizing physical health. The intuitive app allows users to connect based on shared interests and fitness levels. It features user profiles, chat functionality, and workout session organization.
+shortDescription: A student-developed application for college students to find workout partners and overcome challenges like making friends and prioritizing physical health. The intuitive app allows users to connect based on shared interests and fitness levels. It features user profiles, chat functionality, and workout session organization.
 tech:
   - Adobe XD
   - Firebase

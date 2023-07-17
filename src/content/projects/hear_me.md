@@ -1,6 +1,6 @@
 ---
 title: Hear.Me
-shortDescription: Hear.Me is an application that uses QR codes to provide real-time transcription and categorization of announcements on public transportation for deaf individuals. It aims to improve accessibility and inclusivity by bridging the communication gap, empowering marginalized communities. The project successfully implemented live-stream transcription, QR code subscription, and user-friendly design. The next steps include pitching the idea to government organizations and refining the application based on feedback.
+shortDescription: An application using QR codes to offer real-time transcription and categorization of public transportation announcements for deaf individuals, enhancing accessibility and inclusivity.
 tech:
   - LLMs
   - Firebase
