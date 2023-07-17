@@ -6,7 +6,7 @@ tech:
   - HTML
   - Javascript
   - Jquery
-shortDescription: ASL Rocket to Space is a web app promoting accessibility and education for individuals with disabilities, focusing on ASL learning. Through interactive activities and a space-themed interface, it aims to make ASL more common. Built with Django, CSS, HTML, and JavaScript, future plans include expanding features and supporting other disabilities and sign languages.
+shortDescription: A web app promoting accessibility and education for individuals with disabilities, focusing on ASL learning. Through interactive activities and a space-themed interface, it aims to make ASL more common.
 awards:
   - First Place 🥇 at Hackville 2021
 github: "https://github.com/gracinev/aslrockettospace/tree/master"

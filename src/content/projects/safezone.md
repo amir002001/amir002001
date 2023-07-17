@@ -1,6 +1,6 @@
 ---
 title: SafeZone
-shortDescription: SafeZone is an aesthetically pleasing and user-friendly COVID-19 information application built using React Native CLI and JavaScript. It offers a polished interface, an interactive map for region-specific data, and features like saving, sharing, and favoriting information. Data security is ensured through AWS services.
+shortDescription: An aesthetically pleasing and user-friendly COVID-19 information application built using React Native CLI and JavaScript. It offers a polished interface, an interactive map for region-specific data, and features like saving, sharing, and favoriting information. Data security is ensured through AWS services.
 tech:
   - AWS
   - Cognito

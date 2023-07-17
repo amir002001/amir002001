@@ -1,6 +1,6 @@
 ---
 title: My First Errand
-shortDescription: A web application built on the React framework. It provides interactive games for young children to learn important skills related to independence and safety. The application focuses on tasks such as learning the child's address, understanding stranger danger, grocery shopping, and memorizing their phone number.
+shortDescription: An interactive game to teach young children crucial skills in independence and safety, including learning their address, recognizing stranger danger, grocery shopping, and memorizing their phone number.
 tech:
   - Next.js
   - Figma

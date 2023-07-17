@@ -10,7 +10,7 @@ tech:
   - React
   - Supabase
   - Vercel
-shortDescription: Foodbox is a platform that tackles food waste by partnering with grocery stores to offer discounted mystery boxes of their least popular items. Customers can discover new products while helping to reduce waste. The team built the web application using Next.js, Tailwind CSS, and Supabase PostgreSQL. Future plans include expanding partnerships, improving the user experience, and leveraging technology for personalized recommendations.
+shortDescription: A platform reducing food waste by partnering with grocery stores to offer discounted mystery boxes of unpopular items, enabling customers to explore new products.
 awards:
   - First Place 🥇 at McHacks2023 (McGill)
   - Telus Sustainability Challenge 🌱

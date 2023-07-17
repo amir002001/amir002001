@@ -1,6 +1,6 @@
 ---
 title: Returnify
-shortDescription: BAM is a revolutionary platform that transforms the return process. Using React Native and ASP.NET Core, BAM offers a seamless mobile app experience. The team aims to disrupt the industry by providing convenient and efficient returns for consumers.
+shortDescription: A platform that transforms the return process using React Native and ASP.NET Core, offering a seamless mobile app experience. The aim is to disrupt the industry by providing convenient and efficient returns for consumers.
 tech:
   - Asp.NET
   - C#
