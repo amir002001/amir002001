@@ -49,4 +49,5 @@ There could however be use for a caching layer. The keys that I wanted to use fo
 
 ## Prologue
 
-Just like that ogmir is shipped to prod and working fast. It even has a rate-limiter. Good for them! I still have 0 users... ( •͡˘ \_•͡˘)
+Just like that ogmir is shipped to prod and working fast. It even has a rate-limiter. Good for them! I still have 0 users...
+( •͡˘ \_•͡˘)
