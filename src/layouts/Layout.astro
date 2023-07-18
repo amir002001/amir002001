@@ -29,11 +29,15 @@ const concatTitle = title === undefined ? "amir ¬‿¬" : `amir ¬‿¬ - ${tit
                 <>
                     <meta
                         property="og:image"
-                        content={`https://ogmir.fly.dev/api/v1/opengraph?image=${entry.data.image}&title=${entry.data.title}`}
+                        content={`https://ogmir.fly.dev/api/v1/opengraph?image=${encodeURIComponent(
+                            entry.data.image
+                        )}&title=${encodeURIComponent(entry.data.title)}`}
                     />
                     <meta
                         property="twitter:image"
-                        content={`https://ogmir.fly.dev/api/v1/opengraph?image=${entry.data.image}&title=${entry.data.title}`}
+                        content={`https://ogmir.fly.dev/api/v1/opengraph?image=${encodeURIComponent(
+                            entry.data.image
+                        )}&title=${encodeURIComponent(entry.data.title)}`}
                     />
                     <meta
                         property="og:description"
