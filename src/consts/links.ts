@@ -6,6 +6,10 @@ export interface Link {
 
 export const links: Link[] = [
     {
+        title: "blog",
+        href: "/blog",
+    },
+    {
         title: "work",
         href: "/work",
     },

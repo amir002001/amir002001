@@ -2,8 +2,11 @@
 import type { CollectionEntry } from "astro:content";
 import Header from "../components/Header.astro";
 export interface Props {
-    title?: string;
-    entry?: CollectionEntry<"projects"> | CollectionEntry<"work">;
+  title?: string;
+  entry?:
+    | CollectionEntry<"projects">
+    | CollectionEntry<"work">
+    | CollectionEntry<"blog">;
 }
 
 const { title, entry } = Astro.props;
@@ -13,103 +16,86 @@ const concatTitle = title === undefined ? "amir ¬‿¬" : `amir ¬‿¬ - ${tit
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width" />
-        <meta property="og:site_name" content="Amir Afshari" />
-        <meta property="og:title" content={concatTitle} />
-        <meta name="theme-color" content="#111729" />
-        <meta property="og:url" content="https://amir.day" />
-        <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={concatTitle} />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta property="og:site_name" content="Amir Afshari" />
+    <meta property="og:title" content={concatTitle} />
+    <meta name="theme-color" content="#111729" />
+    <meta property="og:url" content="https://amir.day" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={concatTitle} />
 
-        {
-            entry !== undefined ? (
-                <>
-                    <meta
-                        property="og:image"
-                        content={`https://ogmir.fly.dev/api/v1/opengraph?image=${encodeURIComponent(
-                            entry.data.image
-                        )}&title=${encodeURIComponent(entry.data.title)}`}
-                    />
-                    <meta
-                        property="twitter:image"
-                        content={`https://ogmir.fly.dev/api/v1/opengraph?image=${encodeURIComponent(
-                            entry.data.image
-                        )}&title=${encodeURIComponent(entry.data.title)}`}
-                    />
-                    <meta
-                        property="og:description"
-                        content={entry.data.shortDescription}
-                    />
-                    <meta
-                        property="twitter:description"
-                        content={entry.data.shortDescription}
-                    />
-                </>
-            ) : (
-                <>
-                    <meta property="og:description" content="I try my best" />
-                    <meta
-                        property="twitter:description"
-                        content="I try my best"
-                    />
-                    <meta
-                        property="og:image"
-                        content="https://res.cloudinary.com/df3h8ffly/image/upload/v1688822202/%EF%B8%8F_Start_screen_3_udgyff.png"
-                    />
-                    <meta
-                        name="twitter:image"
-                        content="https://res.cloudinary.com/df3h8ffly/image/upload/v1688822202/%EF%B8%8F_Start_screen_3_udgyff.png"
-                    />
-                </>
-            )
-        }
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@400;500;600;700&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            rel="apple-touch-icon"
-            sizes="180x180"
-            href="/apple-touch-icon.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="/favicon-32x32.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="16x16"
-            href="/favicon-16x16.png"
-        />
-        <link rel="manifest" href="/site.webmanifest" />
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
-        <meta name="msapplication-TileColor" content="#da532c" />
-        <meta name="theme-color" content="#ffffff" />
-        <meta name="generator" content={Astro.generator} />
-        <title>{concatTitle}</title>
-    </head>
-    <body class="w-full min-h-screen flex flex-col">
-        <Header title={title} />
-        <main class="flex flex-col items-center grow">
-            <slot />
-        </main>
-    </body>
+    {
+      entry !== undefined ? (
+        <>
+          <meta
+            property="og:image"
+            content={`https://ogmir.fly.dev/api/v1/opengraph?image=${encodeURIComponent(
+              entry.data.image
+            )}&title=${encodeURIComponent(entry.data.title)}`}
+          />
+          <meta
+            property="twitter:image"
+            content={`https://ogmir.fly.dev/api/v1/opengraph?image=${encodeURIComponent(
+              entry.data.image
+            )}&title=${encodeURIComponent(entry.data.title)}`}
+          />
+          <meta
+            property="og:description"
+            content={entry.data.shortDescription}
+          />
+          <meta
+            property="twitter:description"
+            content={entry.data.shortDescription}
+          />
+        </>
+      ) : (
+        <>
+          <meta property="og:description" content="I try my best" />
+          <meta property="twitter:description" content="I try my best" />
+          <meta
+            property="og:image"
+            content="https://res.cloudinary.com/df3h8ffly/image/upload/v1688822202/%EF%B8%8F_Start_screen_3_udgyff.png"
+          />
+          <meta
+            name="twitter:image"
+            content="https://res.cloudinary.com/df3h8ffly/image/upload/v1688822202/%EF%B8%8F_Start_screen_3_udgyff.png"
+          />
+        </>
+      )
+    }
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{concatTitle}</title>
+  </head>
+  <body class="w-full min-h-screen flex flex-col">
+    <Header title={title} />
+    <main class="flex flex-col items-center grow">
+      <slot />
+    </main>
+  </body>
 </html>
 <style is:global>
-    :root {
-        font-family: "Red Hat Mono", monospace;
-    }
-    html,
-    body {
-        @apply box-border bg-slate-900 text-white;
-        overscroll-behavior: none;
-    }
+  :root {
+    font-family: "Red Hat Mono", monospace;
+  }
+  html,
+  body {
+    @apply box-border bg-slate-900 text-white;
+    overscroll-behavior: none;
+  }
 </style>

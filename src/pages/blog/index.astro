@@ -1,0 +1,11 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import { BlogList } from "../../components/BlogList";
+
+const allBlogPosts = await getCollection("blog");
+---
+
+<Layout title="blog">
+  <BlogList allBlogPosts={allBlogPosts} client:idle />
+</Layout>
