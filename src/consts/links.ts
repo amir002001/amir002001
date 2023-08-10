@@ -6,6 +6,10 @@ export interface Link {
 
 export const links: Link[] = [
     {
+        title: "blog",
+        href: "/blog",
+    },
+    {
         title: "work",
         href: "/work",
     },
@@ -14,18 +18,7 @@ export const links: Link[] = [
         href: "/projects",
     },
     {
-        target: "_blank",
-        title: "linkedin",
-        href: "https://linkedin.com/in/amir-afshar",
-    },
-    {
-        target: "_blank",
-        title: "twitter",
-        href: "https://twitter.com/amirloveskiwis",
-    },
-    {
-        target: "_blank",
-        title: "resume",
-        href: "https://docsend.com/view/mni63p69dkxknkkj",
+        title: "about",
+        href: "/about",
     },
 ];
