@@ -5,10 +5,11 @@ import classnames from "classnames";
 const DATE_OPTIONS: Intl.DateTimeFormatOptions = {
     year: "numeric",
     month: "long",
+    day: "numeric",
 };
 
 export const BlogPost = (props: { entry: CollectionEntry<"blog"> }) => {
-    const url = "/work/" + props.entry.slug;
+    const url = "/blog/" + props.entry.slug;
     const [mouseOver, setMouseOver] = useState(false);
 
     return (
