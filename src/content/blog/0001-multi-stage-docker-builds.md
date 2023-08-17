@@ -44,8 +44,8 @@ prod breaks down and I want to debug what went wrong???
 Let's get this very clear. It is a horrible practice to attach to a container to
 debug it. If you have a robust enough platform, where you can get logs and
 metrics from your system running in production, that should be more than enough
-to get a problem solved. Even if your application doesn't support OpenTelemetry,
-installing an eBPF agent should get you up and running in no time.
+to get a problem solved. Installing an eBPF agent should get you up and running
+in no time. Maybe that could be the next thing I look into.
 
 But I understand there are desperate times, and they require desperate measures.
 In those times, I suggest a few hacks/tricks I came across throughout the
