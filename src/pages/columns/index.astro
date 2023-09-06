@@ -6,6 +6,6 @@ import { BlogList } from "../../components/BlogList";
 const allBlogPosts = await getCollection("blog");
 ---
 
-<Layout title="blog">
+<Layout title="columns">
   <BlogList allBlogPosts={allBlogPosts} client:idle />
 </Layout>

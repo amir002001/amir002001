@@ -9,7 +9,7 @@ const DATE_OPTIONS: Intl.DateTimeFormatOptions = {
 };
 
 export const BlogPost = (props: { entry: CollectionEntry<"blog"> }) => {
-    const url = "/blog/" + props.entry.slug;
+    const url = "/columns/" + props.entry.slug;
     const [mouseOver, setMouseOver] = useState(false);
 
     return (
