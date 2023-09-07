@@ -6,19 +6,15 @@ export interface Link {
 
 export const links: Link[] = [
     {
-        title: "blog",
-        href: "/blog",
+        title: "columns",
+        href: "/columns",
     },
     {
-        title: "work",
-        href: "/work",
+        title: "marginalia",
+        href: "/marginalia",
     },
     {
-        title: "projects",
-        href: "/projects",
-    },
-    {
-        title: "about",
-        href: "/about",
+        title: "memoir",
+        href: "/memoir",
     },
 ];
