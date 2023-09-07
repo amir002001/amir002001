@@ -2,7 +2,7 @@
 title: Multi-stage builds and debugging scratch images
 shortDescription: have a stage where you do all your dirty work and copy the build output to a scratch image and end of story right? Not quite. If you don't have even apk installed, how does one debug? let's take a look!
 image: https://res.cloudinary.com/df3h8ffly/image/upload/q_auto:eco/v1691626593/blog_assets/frbackground_texture_metal_scratches-image-kybe8i5q.jpg_qxg2ep.webp
-publishDate: 2023-08-09T00:00:00-0400
+publishDate: 2023-08-09
 ---
 
 have a stage where you do all your dirty work and copy the build output to a

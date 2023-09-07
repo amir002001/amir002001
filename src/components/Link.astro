@@ -1,42 +1,19 @@
 ---
 import classnames from "classnames";
 export interface Props {
-    title: string;
-    className?: string;
-    href: string;
-    target?: string;
+  title: string;
+  className?: string;
+  href: string;
+  target?: string;
 }
 
 const { title, className, href, target } = Astro.props;
 ---
 
 <a
-    target={target ?? "_self"}
-    href={href}
-    class={classnames("flex gap-2 items-end link", className)}
+  target={target ?? "_self"}
+  href={href}
+  class={classnames("flex gap-2 items-end link", className)}
 >
-    <span>[ ]</span><span>{title}</span>
+  <span>{title}</span>
 </a>
-
-<script>
-    const links = document.querySelectorAll(".link");
-    const handleAnchorHover = (e: Event) => {
-        if (e.target == null) {
-            return;
-        }
-        const span = (e.target as Element).querySelector("span");
-        if (span == null) {
-            return;
-        }
-        if (span.innerText == "[ ]") {
-            span.innerText = "[X]";
-        } else {
-            span.innerText = "[ ]";
-        }
-    };
-
-    for (const link of links) {
-        link.addEventListener("mouseenter", handleAnchorHover);
-        link.addEventListener("mouseleave", handleAnchorHover);
-    }
-</script>
