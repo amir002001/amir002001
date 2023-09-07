@@ -3,15 +3,12 @@ import type { CollectionEntry } from "astro:content";
 import Header from "../components/Header.astro";
 export interface Props {
   title?: string;
-  entry?:
-    | CollectionEntry<"projects">
-    | CollectionEntry<"work">
-    | CollectionEntry<"blog">;
+  entry?: CollectionEntry<"columns"> | CollectionEntry<"marginalia">;
 }
 
 const { title, entry } = Astro.props;
 
-const concatTitle = title === undefined ? "amir ¬‿¬" : `amir ¬‿¬ - ${title}`;
+const concatTitle = title === undefined ? "amir" : `amir - ${title}`;
 ---
 
 <!DOCTYPE html>
@@ -33,28 +30,42 @@ const concatTitle = title === undefined ? "amir ¬‿¬" : `amir ¬‿¬ - ${tit
           <meta
             property="og:image"
             content={`https://ogmir.fly.dev/api/v1/opengraph?image=${encodeURIComponent(
-              entry.data.image
+              // TODO meta incase image is empty
+              entry.data.image ??
+                "https://res.cloudinary.com/df3h8ffly/image/upload/v1694048358/Vector_pyvsrs.webp"
             )}&title=${encodeURIComponent(entry.data.title)}`}
           />
           <meta
             property="twitter:image"
             content={`https://ogmir.fly.dev/api/v1/opengraph?image=${encodeURIComponent(
-              entry.data.image
+              entry.data.image ??
+                "https://res.cloudinary.com/df3h8ffly/image/upload/v1694048358/Vector_pyvsrs.webp"
             )}&title=${encodeURIComponent(entry.data.title)}`}
           />
           <meta
             property="og:description"
-            content={entry.data.shortDescription}
+            content={
+              "shortDescription" in entry.data
+                ? entry.data.shortDescription
+                : ""
+            }
           />
           <meta
             property="twitter:description"
-            content={entry.data.shortDescription}
+            content={
+              "shortDescription" in entry.data
+                ? entry.data.shortDescription
+                : ""
+            }
           />
         </>
       ) : (
         <>
-          <meta property="og:description" content="I try my best" />
-          <meta property="twitter:description" content="I try my best" />
+          <meta property="og:description" content="searching for meaning" />
+          <meta
+            property="twitter:description"
+            content="searching for meaning"
+          />
           <meta
             property="og:image"
             content="https://res.cloudinary.com/df3h8ffly/image/upload/v1688822202/%EF%B8%8F_Start_screen_3_udgyff.png"

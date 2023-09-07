@@ -2,7 +2,7 @@ import type { CollectionEntry } from "astro:content";
 import { useState } from "react";
 import classnames from "classnames";
 
-export const Project = (props: { entry: CollectionEntry<"projects"> }) => {
+export const Margin = (props: { entry: CollectionEntry<"marginalia"> }) => {
     const url = "/marginalia/" + props.entry.slug;
     const [mouseOver, setMouseOver] = useState(false);
     return (

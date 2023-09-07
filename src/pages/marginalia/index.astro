@@ -1,11 +1,11 @@
 ---
-import {getCollection} from "astro:content"
+import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
-import {ProjectsList} from "../../components/ProjectsList"
+import { MarginList } from "../../components/MarginList";
 
-const allProjects = await getCollection("projects");
+const marginalia = await getCollection("marginalia");
 ---
 
 <Layout title="projects">
-    <ProjectsList allProjects={allProjects} client:idle />
+  <MarginList marginalia={marginalia} client:idle />
 </Layout>

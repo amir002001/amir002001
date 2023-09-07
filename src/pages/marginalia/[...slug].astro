@@ -1,6 +1,5 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import ProjectButtons from "../../components/ProjectButtons.astro";
 import { getEntry } from "astro:content";
 // 1. Get the slug from the incoming server request
 const { slug } = Astro.params;
@@ -8,7 +7,7 @@ if (slug === undefined) {
   throw new Error("Slug is required");
 }
 // 2. Query for the entry directly using the request slug
-const entry = await getEntry("projects", slug);
+const entry = await getEntry("marginalia", slug);
 // 3. Redirect if the entry does not exist
 if (entry === undefined) {
   return Astro.redirect("/404");
@@ -20,73 +19,42 @@ const title = entry.data.title;
 ---
 
 <Layout title={title} entry={entry}>
-    <section class="max-w-[65ch] w-4/5 my-12">
-        <h1 class="text-3xl font-bold mt-4">{entry.data.title}</h1>
-        <span class="block w-full border-t border-dotted mt-4"></span>
-        {
-            entry.data.awards != null &&
-            entry.data.awards != undefined &&
-            entry.data.awards.length != 0 ? (
-                <div class="mt-4 text-sm">
-                    <span class="font-bold tracking-wide">Awarded:</span>{" "}
-                    {entry.data.awards.map((award, index) => {
-                        const builder = [];
-                        builder.push(award);
-                        if (index != entry.data.awards!.length - 1) {
-                            builder.push(", ");
-                        }
-                        return builder.join("");
-                    })}
-                </div>
-            ) : null
-        }
-        {
-            entry.data.tech.length != 0 ? (
-                <div class="mt-2 text-sm">
-                    <span class="font-bold tracking-wide">Technologies:</span>{" "}
-                    {entry.data.tech.map((tech, index) => {
-                        const builder = [];
-                        builder.push(tech);
-                        if (index != entry.data.tech.length - 1) {
-                            builder.push(", ");
-                        }
-                        return builder.join("");
-                    })}
-                </div>
-            ) : null
-        }
-                <div class="mt-2 text-sm">
-                    <span class="font-bold tracking-wide">First Commit:</span>{" "}
-                    {(new Date(entry.data.date)).toLocaleDateString("en-US")}
-                </div>
+  <section class="max-w-[65ch] w-4/5 my-12">
+    <h1 class="text-3xl font-bold mt-4">{entry.data.title}</h1>
+    <span class="block w-full border-t border-dotted mt-4"></span>
+    <div class="mt-2 text-sm">
+      <span class="font-bold tracking-wide">First Commit:</span>{" "}
+      {new Date(entry.data.date).toLocaleDateString("en-US")}
+    </div>
+    {
+      entry.data.image !== undefined ? (
         <img
-            class="w-fit mt-4"
-            crossorigin="anonymous"
-            src={entry.data.image}
-            alt={`${entry.data.title} project image`}
+          class="w-fit mt-4"
+          crossorigin="anonymous"
+          src={entry.data.image}
+          alt={`${entry.data.title} project image`}
         />
-        <div class="w-full flex mt-4 justify-center">
-            <ProjectButtons className="" entry={entry} />
-        </div>
-        <div class="mt-4 prose prose-invert">
-            <Content />
-            <script
-                src="https://giscus.app/client.js"
-                data-repo="amir002001/amir002001"
-                data-repo-id="R_kgDOJir9cw"
-                data-category="Announcements"
-                data-category-id="DIC_kwDOJir9c84CWj4h"
-                data-mapping="og:title"
-                data-strict="0"
-                data-reactions-enabled="1"
-                data-emit-metadata="0"
-                data-input-position="bottom"
-                data-theme="preferred_color_scheme"
-                data-lang="en"
-                data-loading="lazy"
-                crossorigin="anonymous"
-                async
-            ></script>
-        </div>
-    </section>
+      ) : null
+    }
+    <div class="mt-4 prose">
+      <Content />
+      <script
+        src="https://giscus.app/client.js"
+        data-repo="amir002001/amir002001"
+        data-repo-id="R_kgDOJir9cw"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOJir9c84CWj4h"
+        data-mapping="og:title"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async
+      ></script>
+    </div>
+  </section>
 </Layout>

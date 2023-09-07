@@ -8,7 +8,7 @@ const DATE_OPTIONS: Intl.DateTimeFormatOptions = {
     day: "numeric",
 };
 
-export const BlogPost = (props: { entry: CollectionEntry<"blog"> }) => {
+export const ColumnPost = (props: { entry: CollectionEntry<"columns"> }) => {
     const url = "/columns/" + props.entry.slug;
     const [mouseOver, setMouseOver] = useState(false);
 

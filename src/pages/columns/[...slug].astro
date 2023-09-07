@@ -14,7 +14,7 @@ if (slug === undefined) {
   throw new Error("Slug is required");
 }
 // 2. Query for the entry directly using the request slug
-const entry = await getEntry("blog", slug);
+const entry = await getEntry("columns", slug);
 // 3. Redirect if the entry does not exist
 if (entry === undefined) {
   return Astro.redirect("/404");
