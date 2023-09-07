@@ -1,4 +1,5 @@
 import type { CollectionEntry } from "astro:content";
+import { formatDate } from "../utils/dateUtil";
 
 const DATE_OPTIONS: Intl.DateTimeFormatOptions = {
     year: "numeric",
@@ -21,15 +22,10 @@ export const ColumnPost = (props: { entry: CollectionEntry<"columns"> }) => {
                     {props.entry.data.title}
                 </a>
                 <h4 className="text-sm font-['Noto_Sans'] italic font-light text-gray-600">
-                    {formatDate(props.entry.data.publishDate)}
+                    {formatDate(props.entry.data.publishDate, DATE_OPTIONS)}
                 </h4>
             </div>
             <p className="mt-3">{props.entry.data.shortDescription}</p>
         </div>
     );
-};
-
-const formatDate = (date: Date): string => {
-    const formattedDate = date.toLocaleString("en-US", DATE_OPTIONS);
-    return formattedDate;
 };

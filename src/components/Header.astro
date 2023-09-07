@@ -17,12 +17,12 @@ const { title } = Astro.props;
     {
       links.map((link) => {
         return link.title === title ? (
-          <div class="text-gray-500">
+          <div class="underline">
             <span>{title}</span>
           </div>
         ) : (
           <Link
-            className=""
+            className="underline decoration-gray-300 hover:decoration-black"
             href={link.href}
             title={link.title}
             target={link.target}
