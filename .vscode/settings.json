@@ -1,0 +1,9 @@
+{
+    "grammarly.selectors": [
+        {
+            "language": "astro",
+            "scheme": "file",
+            "pattern": "src/pages/memoir/index.astro"
+        }
+    ]
+}

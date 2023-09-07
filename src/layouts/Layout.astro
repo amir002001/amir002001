@@ -30,7 +30,6 @@ const concatTitle = title === undefined ? "amir" : `amir - ${title}`;
           <meta
             property="og:image"
             content={`https://ogmir.fly.dev/api/v1/opengraph?image=${encodeURIComponent(
-              // TODO meta incase image is empty
               entry.data.image ??
                 "https://res.cloudinary.com/df3h8ffly/image/upload/v1694048358/Vector_pyvsrs.webp"
             )}&title=${encodeURIComponent(entry.data.title)}`}
