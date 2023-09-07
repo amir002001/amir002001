@@ -6,6 +6,11 @@ import { MarginList } from "../../components/MarginList";
 const marginalia = await getCollection("marginalia");
 ---
 
-<Layout title="projects">
-  <MarginList marginalia={marginalia} client:idle />
+<Layout title="marginalia">
+  <section class="my-12 w-4/5 max-w-[65ch]">
+    <h2 class="text-2xl font-medium">
+      Scribbles, thoughts, seldom rants, achievements, and everything else
+    </h2>
+    <MarginList marginalia={marginalia} client:idle />
+  </section>
 </Layout>

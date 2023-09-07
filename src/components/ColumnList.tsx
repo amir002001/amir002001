@@ -5,12 +5,14 @@ export const ColumnList = (props: {
     allColumnPosts: CollectionEntry<"columns">[];
 }) => {
     return (
-        <section className="my-12 w-4/5 max-w-[65ch]">
-            <ul className="flex flex-col gap-8 mt-4">
-                {props.allColumnPosts.map((columnPost) => (
+        <ul className="flex flex-col mt-4">
+            {props.allColumnPosts.map((columnPost) => (
+                <>
                     <ColumnPost key={columnPost.id} entry={columnPost} />
-                ))}
-            </ul>
-        </section>
+
+                    <div className="w-full h-0 border-gray-500 border-t-[0.25px]"></div>
+                </>
+            ))}
+        </ul>
     );
 };

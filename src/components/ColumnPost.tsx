@@ -1,6 +1,4 @@
 import type { CollectionEntry } from "astro:content";
-import { useState } from "react";
-import classnames from "classnames";
 
 const DATE_OPTIONS: Intl.DateTimeFormatOptions = {
     year: "numeric",
@@ -10,36 +8,24 @@ const DATE_OPTIONS: Intl.DateTimeFormatOptions = {
 
 export const ColumnPost = (props: { entry: CollectionEntry<"columns"> }) => {
     const url = "/columns/" + props.entry.slug;
-    const [mouseOver, setMouseOver] = useState(false);
 
     return (
-        <a
-            href={url}
-            className={classnames(
-                "pt-6 pb-8 px-8 border",
-                mouseOver && "border-rose-500"
-            )}
-            onMouseOver={() => setMouseOver(true)}
-            onMouseOut={() => setMouseOver(false)}
-        >
-            <h2
-                className={classnames(
-                    "block text-2xl font-semibold tracking-wider relative",
-                    mouseOver && "text-rose-500 underline"
-                )}
-            >
-                <span
-                    className={classnames("absolute -left-5", mouseOver ? "" : "hidden")}
+        <div className={"py-4"}>
+            <div className="flex gap-1 items-baseline">
+                <a
+                    href={url}
+                    className={
+                        "font-medium relative underline decoration-gray-300 hover:decoration-black"
+                    }
                 >
-                    &gt;
-                </span>
-                {props.entry.data.title}
-            </h2>
-            <h4 className="text-sm">
-                {formatDate(new Date(props.entry.data.publishDate))}
-            </h4>
-            <p className="mt-2">{props.entry.data.shortDescription}</p>
-        </a>
+                    {props.entry.data.title}
+                </a>
+                <h4 className="text-sm font-['Noto_Sans'] italic font-light text-gray-600">
+                    {formatDate(props.entry.data.publishDate)}
+                </h4>
+            </div>
+            <p className="mt-3">{props.entry.data.shortDescription}</p>
+        </div>
     );
 };
 
