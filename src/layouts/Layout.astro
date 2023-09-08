@@ -1,11 +1,17 @@
 ---
 import type { CollectionEntry } from "astro:content";
 import Header from "../components/Header.astro";
+import { formatDate } from "../utils/dateUtil";
 export interface Props {
   title?: string;
   entry?: CollectionEntry<"columns"> | CollectionEntry<"marginalia">;
 }
 
+const DATE_OPTIONS: Intl.DateTimeFormatOptions = {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+};
 const { title, entry } = Astro.props;
 
 const concatTitle = title === undefined ? "amir" : `amir - ${title}`;
@@ -32,14 +38,22 @@ const concatTitle = title === undefined ? "amir" : `amir - ${title}`;
             content={`https://ogmir.fly.dev/api/v1/opengraph?image=${encodeURIComponent(
               entry.data.image ??
                 "https://res.cloudinary.com/df3h8ffly/image/upload/v1694048358/Vector_pyvsrs.webp"
-            )}&title=${encodeURIComponent(entry.data.title)}`}
+            )}&title=${encodeURIComponent(
+              entry.data.title
+            )}&date=${encodeURIComponent(
+              formatDate(entry.data.publishDate, DATE_OPTIONS)
+            )}`}
           />
           <meta
             property="twitter:image"
             content={`https://ogmir.fly.dev/api/v1/opengraph?image=${encodeURIComponent(
               entry.data.image ??
                 "https://res.cloudinary.com/df3h8ffly/image/upload/v1694048358/Vector_pyvsrs.webp"
-            )}&title=${encodeURIComponent(entry.data.title)}`}
+            )}&title=${encodeURIComponent(
+              entry.data.title
+            )}&date=${encodeURIComponent(
+              formatDate(entry.data.publishDate, DATE_OPTIONS)
+            )}`}
           />
           <meta
             property="og:description"
