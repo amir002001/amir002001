@@ -1,7 +1,7 @@
 ---
 title: ogmir
 image: "https://res.cloudinary.com/df3h8ffly/image/upload/q_auto:eco/v1689599180/portfolio/logo_lc1ttx.webp"
-date: 2023-07-08
+publishDate: 2023-07-08
 ---
 
 ## Context

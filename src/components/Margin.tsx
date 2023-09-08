@@ -20,7 +20,7 @@ export const Margin = (props: { entry: CollectionEntry<"marginalia"> }) => {
                 {props.entry.data.title}
             </a>
             <h4 className="text-sm font-['Noto_Sans'] italic font-light text-gray-600">
-                {formatDate(props.entry.data.date, DATE_OPTIONS)}
+                {formatDate(props.entry.data.publishDate, DATE_OPTIONS)}
             </h4>
         </div>
     );
