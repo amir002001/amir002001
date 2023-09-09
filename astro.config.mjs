@@ -6,13 +6,10 @@ import cloudflare from "@astrojs/cloudflare";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), react()],
-  server: {
-    headers: {
-      "Cross-Origin-Embedder-Policy": "require-corp",
-      "Cross-Origin-Opener-Policy": "same-origin"
-    }
-  },
-  output: "server",
-  adapter: cloudflare()
+    integrations: [tailwind(), react()],
+    server: {
+        headers: {},
+    },
+    output: "server",
+    adapter: cloudflare(),
 });
