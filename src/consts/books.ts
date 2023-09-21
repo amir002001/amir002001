@@ -73,11 +73,5 @@ export const books: { [year in Year]?: Book[] } = {
             title: "The Prophet",
             author: "Khalil Gibran",
         },
-
-        {
-            rating: 4,
-            title: "A Scanner Darkly",
-            author: "Philip K. Dick",
-        },
     ],
 };
