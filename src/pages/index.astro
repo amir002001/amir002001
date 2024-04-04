@@ -1,11 +1,45 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Hero from "../components/Hero.astro";
-import MobileToc from "../components/MobileToc.astro";
 ---
 
-<Layout>
-    <Hero />
-    <!--only visible on sm breakpoint-->
-    <MobileToc />
+<Layout title="memoir">
+  <section class="max-w-[65ch] w-4/5 my-12 prose">
+    <h1>Welcome</h1>
+    <p>
+      Hi there, I'm currently an Engineer at TD Bank, working on the future of
+      the bank's internal developer platform. Some of the interesting projects
+      I've worked on during my time here include scalable AKS runners, setting
+      up and managing an HA Patroni Postgres for Terraform and Nexus, and
+      setting up a Bazel build pipeline.
+    </p>
+    <p>
+      Before that, I was an engineer at GEOTAB where we worked on our city twin
+      application to use computer vision to detect anomalies in the streets of
+      Kingston.
+    </p>
+    <p>
+      This website is my attempt to start writing professionally about what I
+      learned during my career and journey. I consider myself privileged to be
+      able to do what I love and enjoy. To work with love gives work meaning,
+      and this blog is my attempt to help people find meaning in work. A
+      carpenter constructing a house as if they were building it for a loved one
+      will make quite a fine house. I believe and apply this to every area of my
+      work, and do this to hopefully spread that message.
+    </p>
+
+    <p>
+      Feel free to reach out to me on <a
+        class="underline decoration-gray-300 hover:decoration-black"
+        target="_blank"
+        href="https://linkedin.com/in/amir-afshar">Linkedin</a
+      >, <a
+        class="underline decoration-gray-300 hover:decoration-black"
+        href="https://twitter.com/amirloveskiwis"
+        target="_blank">X</a
+      >, or shoot me an email at <a
+        class="underline decoration-gray-300 hover:decoration-black"
+        href="mailto:its@amir.day">its@amir.day</a
+      >
+    </p>
+  </section>
 </Layout>
