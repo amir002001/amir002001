@@ -1,12 +1,6 @@
 ---
 import Bracket from "./titledecor/Bracket.astro";
-import cloudinary from "cloudinary";
 const { videoSrc, ...rest } = Astro.props;
-
-const dude = cloudinary.v2.url("oan_2_giwpap.mp4", {
-    resource_type: "video",
-    cloud_name: "df3h8ffly",
-});
 ---
 
 <article class="flex flex-col items-center gap-4 p-6">
@@ -21,7 +15,10 @@ const dude = cloudinary.v2.url("oan_2_giwpap.mp4", {
         muted
         class="video-shadow w-[432px] h-[243px] border border-black"
     >
-        <source src={dude} type="video/mp4" />
+        <source
+            src="https://res.cloudinary.com/df3h8ffly/video/upload/q_auto:eco/v1730062792/oan_2_giwpap.mp4"
+            type="video/mp4"
+        />
         Your browser does not support the video tag.
     </video>
     <slot />
