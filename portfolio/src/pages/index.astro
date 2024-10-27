@@ -1,19 +1,66 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
+import Logo from "../components/Logo.astro";
+import AboutFrame from "../components/AboutFrame.astro";
+import Globe from "../components/Globe.astro";
+import RetroPC from "../components/RetroPC.astro";
+import Article from "../components/article/Article.astro";
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>test</main>
+<Layout title="Amir Afshari">
+    <main class="py-20 px-20 font-sans flex flex-col items-center min-h-screen">
+        <header class="flex justify-center items-center gap-2">
+            <h1 class="font-title text-[64px]">AMIR</h1>
+            <Logo class="w-10 -translate-y-2" />
+            <h1 class="font-title text-[64px]">AFSHARI</h1>
+        </header>
+        <div class="h-8 spacer"></div>
+        <section
+            id="content"
+            class="border border-black flex flex-col w-[480px]"
+        >
+            <!-- ABOUT -->
+            <div class="flex flex-col items-center gap-4 p-6">
+                <div
+                    id="about-title"
+                    class="relative w-[432px] h-[46px] text-center"
+                >
+                    <AboutFrame class="size-full" />
+                    <h2
+                        class="capitalize absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[14px] font-title text-2xl"
+                    >
+                        about
+                    </h2>
+                </div>
+                <p class="px-4">
+                    I am a computer enthusiast focusing on distributed systems,
+                    big data, and geospatial information.
+                </p>
+                <div class="flex items-center gap-8">
+                    <Globe class="w-[90px]" />
+                    <RetroPC class="h-24" />
+                </div>
+                <p class="px-4">
+                    Currently, I am building a distributed machine learning
+                    pipeline at GeoMate to create <a
+                        href="https://en.wikipedia.org/wiki/High-definition_map"
+                        target="_blank"
+                        class="underline">high-definition maps</a
+                    > using satellite and aerial imagery.
+                </p>
+            </div>
+            <!-- articles -->
+            <div class="divider h-[1px] w-full bg-black"></div>
+            <Article>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Pellentesque eu eleifend purus. Donec et tincidunt neque.
+                    Pellentesque nec feugiat quam, in consectetur ipsum. Nullam
+                    tempor enim ante, ut tincidunt ex mattis sed.
+                </p>
+            </Article>
+        </section>
+    </main>
 </Layout>
 
-<style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
-</style>
+<style></style>

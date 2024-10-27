@@ -1,0 +1,34 @@
+---
+import Bracket from "./titledecor/Bracket.astro";
+import cloudinary from "cloudinary";
+const { videoSrc, ...rest } = Astro.props;
+
+const dude = cloudinary.v2.url("oan_2_giwpap.mp4", {
+    resource_type: "video",
+    cloud_name: "df3h8ffly",
+});
+---
+
+<article class="flex flex-col items-center gap-4 p-6">
+    <div class="flex items-center gap-2">
+        <Bracket class="h-9" />
+        <h2 class="font-title text-2xl font-bold text-center">lorem</h2>
+        <Bracket class="h-9 scale-x-[-1]" />
+    </div>
+    <video
+        autoplay
+        loop
+        muted
+        class="video-shadow w-[432px] h-[243px] border border-black"
+    >
+        <source src={dude} type="video/mp4" />
+        Your browser does not support the video tag.
+    </video>
+    <slot />
+</article>
+
+<style>
+    .video-shadow {
+        box-shadow: -2px 3px 0px 0px #000;
+    }
+</style>
