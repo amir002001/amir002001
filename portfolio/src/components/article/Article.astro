@@ -1,31 +1,30 @@
 ---
 import Bracket from "./titledecor/Bracket.astro";
-const { videoSrc, ...rest } = Astro.props;
+const { videoSrc, title, ...rest } = Astro.props;
 ---
 
-<article class="flex flex-col items-center gap-4 p-6">
-    <div class="flex items-center gap-2">
-        <Bracket class="h-9" />
-        <h2 class="font-title text-2xl font-bold text-center">lorem</h2>
-        <Bracket class="h-9 scale-x-[-1]" />
-    </div>
-    <video
-        autoplay
-        loop
-        muted
-        class="video-shadow w-[432px] h-[243px] border border-black"
-    >
-        <source
-            src="https://res.cloudinary.com/df3h8ffly/video/upload/q_auto:eco/v1730062792/oan_2_giwpap.mp4"
-            type="video/mp4"
-        />
-        Your browser does not support the video tag.
-    </video>
+<article class="flex flex-col items-center gap-4 border-b border-black p-6">
+  <div class="flex items-center gap-2">
+    <Bracket class="h-9" />
+    <h2 class="text-center font-title text-2xl font-bold">{title}</h2>
+    <Bracket class="h-9 scale-x-[-1]" />
+  </div>
+  <video
+    autoplay
+    loop
+    muted
+    class="video-shadow h-[243px] w-[432px] border border-black"
+  >
+    <source src={videoSrc} type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <div class="flex w-full flex-col items-start">
     <slot />
+  </div>
 </article>
 
 <style>
-    .video-shadow {
-        box-shadow: -2px 3px 0px 0px #000;
-    }
+  .video-shadow {
+    box-shadow: -2px 3px 0px 0px #000;
+  }
 </style>
