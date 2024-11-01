@@ -3,7 +3,7 @@ title: "Efficient Inference Using Objectness Activation Networks"
 ---
 
 Aerial imagery has grown to sizes and resolutions beyond comprehension.
-For Detroit alone, Maxar satellite imagery of Detroit is around 50 GB with
+For Detroit alone, Maxar satellite imagery is around 50 GB with
 aerial imagery being around 100 GB.
 
 Inference for this scale of imagery is expensive, but paired with and
