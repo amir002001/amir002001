@@ -1,0 +1,41 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Logo from "../components/Logo.astro";
+import About from "../components/About.astro";
+import Articles from "../components/Articles.astro";
+---
+
+<Layout title="Amir Afshari">
+  <main
+    class="flex h-screen w-screen flex-col items-center overflow-y-auto px-20 py-20 font-sans"
+  >
+    <header class="flex items-center justify-center gap-2">
+      <h1 class="font-title text-[64px]">AMIR</h1>
+      <Logo class="w-10 -translate-y-2" />
+      <h1 class="font-title text-[64px]">AFSHARI</h1>
+    </header>
+    <div class="spacer h-8"></div>
+    <div class="flex">
+      <div>
+        <section
+          id="content"
+          class="flex w-[480px] shrink-0 translate-x-[1px] flex-col border-l border-r border-t border-black"
+        >
+          <!-- SM-MD ABOUT -->
+          <aside class="border-b border-black lg:hidden">
+            <About />
+          </aside>
+          <Articles />
+        </section>
+      </div>
+      <aside class="relative">
+        <div
+          class="sticky top-0 hidden w-[315px] border-b border-l border-r border-t border-black lg:block"
+        >
+          <About />
+        </div>
+      </aside>
+    </div>
+  </main>
+</Layout>
+<style></style>
