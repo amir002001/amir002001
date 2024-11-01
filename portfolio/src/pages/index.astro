@@ -1,8 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Logo from "../components/Logo.astro";
-import Article from "../components/article/Article.astro";
 import About from "../components/About.astro";
+import Articles from "../components/Articles.astro";
 ---
 
 <Layout title="Amir Afshari">
@@ -16,73 +16,21 @@ import About from "../components/About.astro";
     </header>
     <div class="spacer h-8"></div>
     <div class="flex">
-      <section
-        id="content"
-        class="flex w-[480px] shrink-0 flex-col border-l border-r border-t border-black"
-      >
-        <!-- SM-MD ABOUT -->
-        <aside class="border-b border-black lg:hidden">
-          <About />
-        </aside>
-        <!-- articles -->
-        <Article
-          videoSrc="https://res.cloudinary.com/df3h8ffly/video/upload/q_auto:eco/v1730062792/oan_2_giwpap.mp4"
-          title="OAN for Efficient Aerial Image Object Detection"
+      <div>
+        <section
+          id="content"
+          class="flex w-[480px] shrink-0 translate-x-[1px] flex-col border-l border-r border-t border-black"
         >
-          <p>
-            Using an OAN (Objectness Activation Network), better performance is
-            achieved in a sense
-          </p>
-        </Article>
-        <Article
-          videoSrc="https://res.cloudinary.com/df3h8ffly/video/upload/q_auto:eco/v1730062792/oan_2_giwpap.mp4"
-          title="OAN for Efficient Aerial Image Object Detection"
-        >
-          <p>
-            Using an OAN (Objectness Activation Network), better performance is
-            achieved in a sense
-          </p>
-        </Article>
-        <Article
-          videoSrc="https://res.cloudinary.com/df3h8ffly/video/upload/q_auto:eco/v1730062792/oan_2_giwpap.mp4"
-          title="OAN for Efficient Aerial Image Object Detection"
-        >
-          <p>
-            Using an OAN (Objectness Activation Network), better performance is
-            achieved in a sense
-          </p>
-        </Article>
-        <Article
-          videoSrc="https://res.cloudinary.com/df3h8ffly/video/upload/q_auto:eco/v1730062792/oan_2_giwpap.mp4"
-          title="OAN for Efficient Aerial Image Object Detection"
-        >
-          <p>
-            Using an OAN (Objectness Activation Network), better performance is
-            achieved in a sense
-          </p>
-        </Article>
-        <Article
-          videoSrc="https://res.cloudinary.com/df3h8ffly/video/upload/q_auto:eco/v1730062792/oan_2_giwpap.mp4"
-          title="OAN for Efficient Aerial Image Object Detection"
-        >
-          <p>
-            Using an OAN (Objectness Activation Network), better performance is
-            achieved in a sense
-          </p>
-        </Article>
-        <Article
-          videoSrc="https://res.cloudinary.com/df3h8ffly/video/upload/q_auto:eco/v1730062792/oan_2_giwpap.mp4"
-          title="OAN for Efficient Aerial Image Object Detection"
-        >
-          <p>
-            Using an OAN (Objectness Activation Network), better performance is
-            achieved in a sense
-          </p>
-        </Article>
-      </section>
+          <!-- SM-MD ABOUT -->
+          <aside class="border-b border-black lg:hidden">
+            <About />
+          </aside>
+          <Articles />
+        </section>
+      </div>
       <aside class="relative">
         <div
-          class="sticky top-0 hidden w-[315px] border-b border-r border-t border-black lg:block"
+          class="sticky top-0 hidden w-[315px] border-b border-l border-r border-t border-black lg:block"
         >
           <About />
         </div>
@@ -90,5 +38,4 @@ import About from "../components/About.astro";
     </div>
   </main>
 </Layout>
-
 <style></style>
