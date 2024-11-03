@@ -9,5 +9,6 @@ aerial imagery being around 100 GB.
 Inference on this scale of imagery is expensive, but paired with an
 Objectness Activation Network (OAN), a much cheaper threshold for each
 tile is calculated to direct the pipeline on whether a tile has information at all.
+
 Using this technique I have increased the speed of inference by almost a third
-without loss in accuracy in certain areas where features are not as prevalent.
+without loss in accuracy in areas where features are not as prevalent.
